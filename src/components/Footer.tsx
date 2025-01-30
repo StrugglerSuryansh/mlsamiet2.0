@@ -3,7 +3,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
 // import { SiLinktree } from "react-icons/si";
-import Commudle from '../images/commudle.svg';
 import { FaCopyright } from "react-icons/fa";
 const Footer = () => {
   return (
