@@ -20,18 +20,12 @@ const MobileView = ({ visible }: MobileMenuProps) => {
         <NavbarItem href="/projects" mobileView={true}>
           Projects
         </NavbarItem>
-        <NavbarItem href="https://medium.com/msackiit" mobileView={true}>
-          Blog
-        </NavbarItem>
         <NavbarItem href="/members" mobileView={true}>
           Members
         </NavbarItem>
         <NavbarItem href="/gallery" mobileView={true}>
           Gallery
         </NavbarItem>
-        {/* <NavbarItem href={YOUTUBE_URL} mobileView={true}>
-          Youtube
-        </NavbarItem> */}
         <NavbarItem href="/contact" type="button" mobileView={true}>
           Contact
         </NavbarItem>
