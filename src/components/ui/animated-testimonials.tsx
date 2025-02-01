@@ -6,10 +6,13 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 type Testimonial = {
-  quote: string;
+  quote?: string;
   name: string;
-  designation: string;
-  src: string;
+  username:string,
+  body:string,
+  img?:string,
+  designation?: string;
+  src?: string;
 };
 export const AnimatedTestimonials = ({
   testimonials,
@@ -80,7 +83,7 @@ export const AnimatedTestimonials = ({
                   className="absolute inset-0 origin-bottom"
                 >
                   <Image
-                    src={testimonial.src}
+                    src={testimonial.src ? testimonial.src : ""}
                     alt={testimonial.name}
                     width={500}
                     height={500}
@@ -119,7 +122,7 @@ export const AnimatedTestimonials = ({
               {testimonials[active].designation}
             </p>
             <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
-              {testimonials[active].quote.split(" ").map((word, index) => (
+              {testimonials[active].quote?.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
                   initial={{
