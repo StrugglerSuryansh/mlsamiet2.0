@@ -12,69 +12,68 @@ import NavbarItem from "./NavbarItem";
 const OFFSET = 20;
 
 const Navbar = () => {
-  const [showBackground, setShowBackground] = useState(false);
-  const [showMobileMenu, setShowmobileMenu] = useState(false);
+    const [showBackground, setShowBackground] = useState(false);
+    const [showMobileMenu, setShowmobileMenu] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= OFFSET) {
-        setShowBackground(true);
-      } else setShowBackground(false);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY >= OFFSET) {
+                setShowBackground(true);
+            } else setShowBackground(false);
+        };
 
-    window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
-  const toggleMobileMenu = useCallback(() => {
-    setShowmobileMenu((current) => !current);
-  }, []);
+    const toggleMobileMenu = useCallback(() => {
+        setShowmobileMenu((current) => !current);
+    }, []);
 
-  return (
-    <nav
-      className={`mx-auto fixed left-0 right-0 top-0 z-50 w-screen max-w-full py-4 pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-10 lg:max-w-[1920px] transition-all border-b-2 border-cyan-200 ${
-        showBackground ? "backdrop-blur-md" : "bg-white"
-      }`}
-    >
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <Link href="/">
-            <Image
-              src={"/mlsamietlogo1.png"}
-              alt="MLSA MIET Logo"
-              width={400}
-              height={400}
-              loading="eager"
-              className="w-auto h-[35px] md:h-[40px] lg:h-[80px]"
-            />
-          </Link>
-          <span className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-[20px] font-semibold text-transparent lg:text-[1.7vw]">
-            MLSA <span className="hidden md:inline-block">MIET</span>
-          </span>
-        </div>
-        <div onClick={toggleMobileMenu} className="md:hidden ml-2">
-          {!showMobileMenu ? (
-            <AiOutlineMenu className="text-xl" />
-          ) : (
-            <VscChromeClose className="text-xl" />
-          )}
-          <MobileView visible={showMobileMenu} />
-        </div>
-        <div className="hidden gap-4 md:gap-1 text-black md:flex md:items-center xl:gap-6">
-          <NavbarItem href="/events">Events</NavbarItem>
-          <NavbarItem href="/projects">Projects</NavbarItem>
-          <NavbarItem href="/gallery">Gallery</NavbarItem>
-          <NavbarItem href="/members">Members</NavbarItem>
-          <NavbarItem href="/auth/login" type="button">
-            Join Us
-          </NavbarItem>
-        </div>
-      </div>
-    </nav>
-  );
+    return (
+        <nav
+            className={`mx-auto fixed left-0 right-0 top-0 z-50 w-screen max-w-full py-4 pl-2 pr-4 sm:pl-4 sm:pr-6 lg:pl-6 lg:pr-10 lg:max-w-[1920px] transition-all border-b-2 border-cyan-200 ${showBackground ? "backdrop-blur-md" : "bg-white"
+                }`}
+        >
+            <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                    <Link href="/">
+                        <Image
+                            src={"/mlsamietlogo1.png"}
+                            alt="MLSA MIET Logo"
+                            width={400}
+                            height={400}
+                            loading="eager"
+                            className="w-auto h-[35px] md:h-[40px] lg:h-[80px]"
+                        />
+                    </Link>
+                    <span className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-[20px] font-semibold text-transparent lg:text-[1.7vw]">
+                        MLSA <span className="hidden md:inline-block">MIET</span>
+                    </span>
+                </div>
+                <div onClick={toggleMobileMenu} className="md:hidden ml-2">
+                    {!showMobileMenu ? (
+                        <AiOutlineMenu className="text-xl" />
+                    ) : (
+                        <VscChromeClose className="text-xl" />
+                    )}
+                    <MobileView visible={showMobileMenu} />
+                </div>
+                <div className="hidden gap-4 md:gap-1 text-black md:flex md:items-center xl:gap-6">
+                    <NavbarItem href="/events">Events</NavbarItem>
+                    <NavbarItem href="/projects">Projects</NavbarItem>
+                    <NavbarItem href="/gallery">Gallery</NavbarItem>
+                    <NavbarItem href="/members">Members</NavbarItem>
+                    <NavbarItem href="/auth/login" type="button">
+                        Join Us
+                    </NavbarItem>
+                </div>
+            </div>
+        </nav>
+    );
 };
 
 export default Navbar;
