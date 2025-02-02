@@ -1,6 +1,5 @@
 "use client";
 
-// import { YOUTUBE_URL } from "@/constants";
 import NavbarItem from "./NavbarItem";
 
 type MobileMenuProps = {
@@ -8,29 +7,30 @@ type MobileMenuProps = {
 };
 
 const MobileView = ({ visible }: MobileMenuProps) => {
-  if (!visible) {
-    return null;
-  }
+  if (!visible) return null;
+
   return (
-    <>
-      <div className="bg-gradient-to-b from-[#042179] to-[#949fc0] fixed right-[24px] mt-2 flex w-[220px] flex-col gap-2 rounded-md pb-3 pt-2 text-center font-semibold md:hidden ">
-        <NavbarItem href="/events" mobileView={true}>
-          Events
-        </NavbarItem>
-        <NavbarItem href="/projects" mobileView={true}>
-          Projects
-        </NavbarItem>
-        <NavbarItem href="/members" mobileView={true}>
-          Members
-        </NavbarItem>
-        <NavbarItem href="/gallery" mobileView={true}>
-          Gallery
-        </NavbarItem>
-        <NavbarItem href="/contact" type="button" mobileView={true}>
-          Contact
-        </NavbarItem>
+    <div className="fixed inset-x-0 top-[72px] z-50 md:hidden">
+      <div className="bg-gradient-to-b from-[#042179] to-[#949fc0] px-4 py-4 shadow-lg">
+        <div className="mx-auto max-w-[1920px]">
+          <NavbarItem href="/events" mobileView={true}>
+            Events
+          </NavbarItem>
+          <NavbarItem href="/projects" mobileView={true}>
+            Projects
+          </NavbarItem>
+          <NavbarItem href="/members" mobileView={true}>
+            Members
+          </NavbarItem>
+          <NavbarItem href="/gallery" mobileView={true}>
+            Gallery
+          </NavbarItem>
+          <NavbarItem href="/contact" type="button" mobileView={true}>
+            Contact
+          </NavbarItem>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
