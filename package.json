@@ -17,11 +17,8 @@
     "lucide-react": "^0.474.0",
     "motion": "^12.2.0",
     "next": "15.1.6",
-<<<<<<< HEAD
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
-=======
->>>>>>> e047f6419dd7cac3aa47736c1172a3ba74e725c6
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.5",
