@@ -36,7 +36,7 @@ export default function ContactForm() {
 
     const today = new Date().toISOString().split("T")[0];
     const storedData = localStorage.getItem("submissionData");
-    const submissionData = storedData 
+    const submissionData = storedData
       ? JSON.parse(storedData)
       : { date: today, count: 0 };
 
@@ -165,7 +165,7 @@ export default function ContactForm() {
                 htmlFor="message"
                 className="text-base font-semibold text-gray-700"
               >
-                Message (Optional)
+                Message
               </label>
               <Textarea
                 id="message"

@@ -4,13 +4,18 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
+import { Twitter, Linkedin, Instagram } from "lucide-react";
 
 type Testimonial = {
   quote: string;
   name: string;
   designation: string;
   src: string;
+  social?: {
+    twitter?: string;
+    linkedin?: string;
+    instagram?: string;
+  };
 };
 
 export const AnimatedTestimonials = ({
@@ -125,6 +130,47 @@ export const AnimatedTestimonials = ({
                 </motion.span>
               ))}
             </motion.p>
+
+            {/* Social Media Icons */}
+            {testimonials[active].social && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="flex gap-3 mt-6"
+              >
+                {testimonials[active].social?.twitter && (
+                  <a
+                    href={testimonials[active].social?.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
+                  >
+                    <Twitter className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
+                  </a>
+                )}
+                {testimonials[active].social?.linkedin && (
+                  <a
+                    href={testimonials[active].social?.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
+                  >
+                    <Linkedin className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
+                  </a>
+                )}
+                {testimonials[active].social?.instagram && (
+                  <a
+                    href={testimonials[active].social?.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
+                  >
+                    <Instagram className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
+                  </a>
+                )}
+              </motion.div>
+            )}
           </motion.div>
 
           {/* Navigation Buttons */}
@@ -147,11 +193,3 @@ export const AnimatedTestimonials = ({
     </div>
   );
 };
-
-export const AnimatedTestimonialsDemo = dynamic(
-  () => import("@/components/AnimatedTestimonials").then((mod) => mod.AnimatedTestimonialsDemo),
-  { 
-    ssr: false,
-    loading: () => <div className="h-[500px] w-full bg-gray-50 animate-pulse rounded-xl" />
-  }
-);

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import type React from "react" // Import React
+import type React from "react"
 
 interface NavbarItemProps {
   children: React.ReactNode
