@@ -12,7 +12,6 @@ export default function Home() {
       <SpotlightNewDemo />
       <MagicCardDemo />
       <MarqueeDemo />
-      
       <AnimatedTestimonialsDemo />
       <ContactForm />
     </div>
