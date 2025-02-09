@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed left-0 right-0 top-0 z-[51] w-full py-4 px-4 sm:px-6 lg:px-6 border-b-2 border-cyan-200 ${showBackground ? "backdrop-blur-md" : "bg-white"
+        className={`fixed left-0 right-0 top-0 z-[1000] w-full py-4 px-4 sm:px-6 lg:px-6 border-b-2 border-cyan-200 ${showBackground ? "backdrop-blur-md" : "bg-white "
           }`}
       >
         <div className="flex items-center justify-between max-w-[1920px] mx-auto">
