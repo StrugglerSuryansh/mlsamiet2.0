@@ -86,11 +86,11 @@ export default function ContactForm() {
         {/* Left side illustration */}
         <div className="relative hidden lg:block">
           <div className="absolute left-8 top-8 h-[400px] w-[400px] rounded-[40px] border bg-white p-4 shadow-sm">
-            {/* <img 
-              src={image.src} 
-              alt="Illustration" 
-              className="rounded-[36px]" 
-            /> */}
+            <img
+              src="mlsamietlogo1.png"
+              alt="Illustration"
+              className="rounded-[36px]"
+            />
           </div>
           <div className="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-blue-50"></div>
           <div className="absolute -bottom-4 right-12 h-32 w-32 rounded-full bg-yellow-50"></div>
