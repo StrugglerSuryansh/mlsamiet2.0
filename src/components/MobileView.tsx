@@ -16,17 +16,15 @@ const MobileView = ({ visible }: MobileMenuProps) => {
           <NavbarItem href="/events" mobileView={true}>
             Events
           </NavbarItem>
-          <NavbarItem href="/projects" mobileView={true}>
-            Projects
-          </NavbarItem>
+
           <NavbarItem href="/members" mobileView={true}>
             Members
           </NavbarItem>
           <NavbarItem href="/gallery" mobileView={true}>
             Gallery
           </NavbarItem>
-          <NavbarItem href="/contact" type="button" mobileView={true}>
-            Contact
+          <NavbarItem href="/joinus" type="button" mobileView={true}>
+            Join Us
           </NavbarItem>
         </div>
       </div>
