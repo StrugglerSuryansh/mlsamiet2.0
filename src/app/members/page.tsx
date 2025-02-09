@@ -17,8 +17,8 @@ export default function MembersPage() {
         </h2>
       </div>
       <div className="flex flex-wrap justify-center gap-8 mt-6">
-        <ThreeDCardDemo name="muskan" headling="hello"/>
-        <ThreeDCardDemo name="yash" headling="hello"/>
+        <ThreeDCardDemo name="muskan" headline="hello"/>
+        <ThreeDCardDemo name="yash" headline="hello"/>
       </div>
 
       {/* Technical Team Section */}
@@ -29,10 +29,10 @@ export default function MembersPage() {
       </div>
       {/* <div className="flex justify-center gap-10 flex-wrap max-w-[80%] mx-auto"> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 mx-auto px-4">
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
       </div>
 
       {/* Other teams */}
@@ -42,18 +42,18 @@ export default function MembersPage() {
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 mx-auto px-4">
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
-        <ThreeDCardDemo size="small" name="lomash" headling="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
+        <ThreeDCardDemo size="small" name="lomash" headline="hello" />
       </div>
     </div>
   );
