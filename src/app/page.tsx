@@ -6,6 +6,7 @@ import { MarqueeDemo } from "@/components/MarqueeDemo";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonials";
 import ContactForm from "@/components/ContactForm";
 import CanvasRevealEffectDemo from "@/components/CanvasRevealEffectDemo";
+import MembersPage from "./members/page";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <MarqueeDemo />
       <AnimatedTestimonialsDemo />
       <ContactForm />
+      <MembersPage />
     </div>
   );
 }
