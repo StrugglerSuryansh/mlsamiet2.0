@@ -5,12 +5,14 @@ import { MarqueeDemo } from "@/components/MarqueeDemo";
 
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonials";
 import ContactForm from "@/components/ContactForm";
+import CanvasRevealEffectDemo from "@/components/CanvasRevealEffectDemo";
 
 export default function Home() {
   return (
     <div>
       <SpotlightNewDemo />
-      <MagicCardDemo />
+      <CanvasRevealEffectDemo />
+      {/* <MagicCardDemo /> */}
       <MarqueeDemo />
       <AnimatedTestimonialsDemo />
       <ContactForm />
