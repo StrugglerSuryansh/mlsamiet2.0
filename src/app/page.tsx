@@ -17,7 +17,6 @@ export default function Home() {
       <MarqueeDemo />
       <AnimatedTestimonialsDemo />
       <ContactForm />
-      <MembersPage />
     </div>
   );
 }
