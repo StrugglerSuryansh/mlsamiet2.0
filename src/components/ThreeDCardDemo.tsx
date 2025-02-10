@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import Link from "next/link";
 
 interface ThreeDCardProps {
   size?: "default" | "small";
@@ -65,7 +66,9 @@ export function ThreeDCardDemo({
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:scale-110 transition"
             >
-              <Image src="/Github.svg" width={24} height={24} alt="GitHub" />
+              <Link href={links?.github} target="__blank">
+              <Image src="/Github.svg" width={24} height={24} alt="GitHub" className="hover:cursor-pointer"/>
+              </Link>
             </CardItem>
           )}
           
@@ -78,7 +81,9 @@ export function ThreeDCardDemo({
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:scale-110 transition"
             >
-              <Image src="/instagram.svg" width={24} height={24} alt="Instagram" />
+              <Link href={links?.instagram} target="__blank">
+              <Image src="/instagram.svg" width={24} height={24} alt="Instagram" className="hover:cursor-pointer"/>
+              </Link>
             </CardItem>
           )}
           
@@ -91,7 +96,9 @@ export function ThreeDCardDemo({
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:scale-110 transition"
             >
-              <Image src="/linkedIn.svg" width={24} height={24} alt="LinkedIn" />
+              <Link href={links?.linkedin} target="__blank">
+              <Image src="/linkedIn.svg" width={24} height={24} alt="LinkedIn" className="hover:cursor-pointer"/>
+              </Link>
             </CardItem>
           )}
         </div>
