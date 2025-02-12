@@ -7,12 +7,15 @@ import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonials";
 import ContactForm from "@/components/ContactForm";
 import CanvasRevealEffectDemo from "@/components/CanvasRevealEffectDemo";
 import MembersPage from "./members/page";
+import Cards from "@/components/cards";
 
 export default function Home() {
   return (
     <div>
       <SpotlightNewDemo />
-      <CanvasRevealEffectDemo />
+      {/* might have to remove that */}
+      {/* <CanvasRevealEffectDemo /> */}
+      <Cards />
       {/* <MagicCardDemo /> */}
       <MarqueeDemo />
       <AnimatedTestimonialsDemo />
