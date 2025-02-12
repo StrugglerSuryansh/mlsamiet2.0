@@ -81,7 +81,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-white p-4 md:p-8">
+    <div className="min-h-screen w-full bg-white p-4 md:p-8 id=contact">
       <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2">
         {/* Left side illustration */}
         <div className="relative hidden lg:block">
