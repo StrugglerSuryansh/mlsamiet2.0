@@ -1,4 +1,5 @@
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import { TextAnimate } from "@/components/magicui/text-animate";
 
 export function AnimatedTestimonialsDemo() {
   const testimonials = [
@@ -43,5 +44,19 @@ export function AnimatedTestimonialsDemo() {
       }
     },
   ];
-  return <AnimatedTestimonials testimonials={testimonials} />;
+  return <div>
+    <div className="flex flex-col items-center justify-center gap-4 text-blue-400 dark:text-cyan-400 text-center font-bold font-mono m-4">
+      <TextAnimate
+        animation="blurInUp"
+        by="character"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+      >
+        Meet the team
+
+      </TextAnimate>
+    </div>
+
+    <AnimatedTestimonials testimonials={testimonials} />;
+
+  </div>
 }
