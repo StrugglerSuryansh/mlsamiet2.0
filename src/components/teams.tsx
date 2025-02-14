@@ -1,98 +1,256 @@
-import { TeamMember } from "./ui/team-member"
+import { TeamMember } from "./ui/team-member";
 
 const technicalTeam = [
   {
-    name: "Alex Johnson",
-    role: "Senior Developer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    name: "Suryansh Patwal",
+    imageUrl: "/MLSA_WEBSITE/Domain_Heads_photo/suryansh.png",
   },
   {
-    name: "Sarah Lee",
-    role: "Backend Engineer",
+    name: "Lomash Choudhary",
     imageUrl:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "/MLSA_WEBSITE/volunteer_photo/technical team/Lomash Choudhary.jpeg",
   },
   {
-    name: "Mike Chen",
-    role: "Frontend Developer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    name: "Naitik Kumar",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/technical team/Naitik.webp",
   },
   {
-    name: "Emily Taylor",
-    role: "DevOps Engineer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    name: "Piyush Goel",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/technical team/Piyush Goel.png",
   },
-  {
-    name: "David Kim",
-    role: "QA Engineer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-  },
-]
+];
 
 const graphicsTeam = [
   {
-    name: "Olivia Martinez",
-    role: "Lead Designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1573497019236-17dd59b5fa20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    name: "Anmol",
+    imageUrl: "/MLSA_WEBSITE/Domain_Heads_photo/anmol.jpg",
   },
   {
-    name: "Ethan Wilson",
-    role: "UI/UX Designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    name: "Aman Sharma",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/AmanSharma.jpg",
+    imagePosition: "top" as const,
+
   },
   {
-    name: "Sophia Brown",
-    role: "Graphic Designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    name: "Arya",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/arya.jpg",
+    imagePosition: "top" as const,
   },
   {
-    name: "Liam Garcia",
-    role: "Motion Designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    name: "Ayush",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/Ayush.jpg",
   },
-]
+  {
+    name: "Bhavya Gupta",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/Bhavya Gupta.jpg",
+
+  },
+  {
+    name: "Name missing",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/Graphic team/IMG_20250210_173126.jpg",
+    imagePosition: "top" as const,
+
+  },
+  {
+    name: "Khushi Gupta",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/khushi Gupta .jpg",
+  },
+  {
+    name: "Udit Goel",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/UditGoel.jpg",
+  },
+];
 
 const contentTeam = [
   {
-    name: "Emma Davis",
-    role: "Content Strategist",
+    name: "Tanushka",
     imageUrl:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "/MLSA_WEBSITE/Domain_Heads_photo/tanushka.jpg",
   },
   {
-    name: "Noah Thompson",
-    role: "Copywriter",
+    name: "Geetanshi Goel",
     imageUrl:
-      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "/MLSA_WEBSITE/volunteer_photo/Content team/Geetanshigoel.jpg",
   },
   {
-    name: "Ava Rodriguez",
-    role: "Social Media Manager",
+    name: "Name missing",
     imageUrl:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "/MLSA_WEBSITE/volunteer_photo/Content team/IMG_20250211_172808.jpg",
+    imagePosition: "top" as const,
+      
   },
   {
-    name: "Lucas Nguyen",
-    role: "SEO Specialist",
+    name: "Name missing 2",
     imageUrl:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "/MLSA_WEBSITE/volunteer_photo/Content team/IMG-20250210-WA0006.jpg",
   },
-]
+  {
+    name: "Pranav Bansal",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/Content team/PranavBansal.jpg",
+  },
+];
+
+const eventTeam = [
+  {
+    name: "Yagyansh Singh Deshwal",
+    imageUrl:
+      "/MLSA_WEBSITE/Domain_Heads_photo/yagyansh.jpg",
+  },
+  {
+    name: "Name missing 1",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20241208_144759.jpg",
+  },
+  {
+    name: "Name missing 2",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20241228_155612.jpg",
+  },
+  {
+    name: "Name missing 3",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20250210_214019.jpg",
+    imagePosition: "top" as const,
+
+  },
+  {
+    name: "Name missing 4",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20250211_015050.jpg",
+  },
+  {
+    name: "Nirdesh Tyagi",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/event team/Nirdesh Tyagi.jpg",
+    imagePosition: "top" as const,
+
+  },
+  {
+    name: "Name missing 7",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/event team/Screenshot_20241016_201031_Chrome.jpg",
+  },
+  {
+    name: "Tushar Tyagi",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/event team/Tushar Tyagi_.jpg",
+  },
+];
+
+const prTeam = [
+  {
+    name: "Pari",
+    imageUrl:
+      "/MLSA_WEBSITE/Domain_Heads_photo/pari.png",
+  },
+  {
+    name: "Anushka Singhal",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/PR team/Anushka Singhal.jpg",
+    imagePosition: "top" as const,
+
+  },
+  {
+    name: "Kunj Agarwal",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/PR team/Kunj Agarwal.jpg",
+    imagePosition: "top" as const,
+
+  },
+  {
+    name: "Sahil Gulati",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/PR team/Sahil Gulati.jpg",
+  },
+  {
+    name: "Name missing 1",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/PR team/Screenshot_2025-02-09-18-10-36-67_99c04817c0de5652397fc8b56c3b3817.jpg",
+
+  },
+  {
+    name: "Name missing 2",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/PR team/Screenshot_20250209_180247_Gallery.jpg",
+    imagePosition: "top" as const,
+
+  },
+  {
+    name: "Name missing 3",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/PR team/WhatsApp Image 2024-12-28 at 22.45.34.jpeg",
+  },
+];
+
+const socialTeam = [
+  {
+    name: "Muskan",
+    imageUrl:
+      "/MLSA_WEBSITE/Domain_Heads_photo/MUSKAN2.jpg",
+  },
+  {
+    name: "Name missing 1",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/social team/IMG_20241207_222905_835.jpg",
+  },
+  {
+    name: "Name missing 2",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/social team/IMG-20241025-WA0023.jpg",
+  },
+  {
+    name: "Tanishka",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/social team/Tanishkaagg.jpg",
+  },
+  {
+    name: "Name missing 3",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/social team/WhatsApp Image 2025-02-09 at 11.20.04 PM.jpeg",
+  },
+];
+
+const visualTeam = [
+  {
+    name: "Asit Updadhyay",
+    imageUrl:
+      "/MLSA_WEBSITE/Domain_Heads_photo/ASIT_UPADHYAY.jpg",
+  },
+  {
+    name: "Ansh Sharma",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/visual team/Ansh Sharma.jpg",
+  },
+  {
+    name: "name missing 1",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/visual team/c395055e-2096-41b9-992c-762ccf40cf04.jpg",
+  },
+  {
+    name: "Gagan Saini",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/visual team/Gagan Saini.jpg",
+  },
+  {
+    name: "Sahil Gulati",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/visual team/Sahil Gulati.jpg",
+  },
+  {
+    name: "Sumit Aggarwal",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/visual team/Sumit_Aggarwal.jpg",
+  },
+];
 
 export function Teams() {
   return (
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-center mb-16">Our Teams</h1>
 
-      <section className="mb-16">
+      <section className="mb-20">
         <h2 className="text-3xl font-semibold mb-8">Technical Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {technicalTeam.map((member, index) => (
@@ -110,7 +268,7 @@ export function Teams() {
         </div>
       </section>
 
-      <section>
+      <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-8">Content Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {contentTeam.map((member, index) => (
@@ -118,7 +276,42 @@ export function Teams() {
           ))}
         </div>
       </section>
-    </div>
-  )
-}
 
+      <section className="mb-16">
+        <h2 className="text-3xl font-semibold mb-8">Event Team</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {eventTeam.map((member, index) => (
+            <TeamMember key={member.name} {...member} isFirst={index === 0} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="text-3xl font-semibold mb-8">PR Team</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {prTeam.map((member, index) => (
+            <TeamMember key={member.name} {...member} isFirst={index === 0} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="text-3xl font-semibold mb-8">Social Media Team</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {socialTeam.map((member, index) => (
+            <TeamMember key={member.name} {...member} isFirst={index === 0} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="text-3xl font-semibold mb-8">Visual Team</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {visualTeam.map((member, index) => (
+            <TeamMember key={member.name} {...member} isFirst={index === 0} />
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
