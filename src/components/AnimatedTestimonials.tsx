@@ -10,6 +10,7 @@ export function AnimatedTestimonialsDemo() {
       designation: "Product Manager at TechFlow",
       src: "/MLSA_WEBSITE/Domain_Heads_photo/yash.jpg",
     },
+    //fill the rest of the array with objects like the one above
     {
       quote:
         "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
