@@ -8,7 +8,7 @@ export function AnimatedTestimonialsDemo() {
         "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
       name: "Sarah Chen",
       designation: "Product Manager at TechFlow",
-      src: "/MLSA_WEBSITE/Domain_Heads_photo/yash.jpg",
+      src: "/MLSA_WEBSITE/Domain_Heads_photo/yash1.JPG",
     },
     //fill the rest of the array with objects like the one above
     {
