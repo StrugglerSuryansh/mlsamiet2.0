@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 export interface TeamMemberProps {
-    name: string;
-    role?: string;
-    imageUrl: string;
-    imagePosition?: 'top' | 'center' | 'bottom';
-    isFirst?: boolean;
-  }
+  name: string;
+  role?: string;
+  imageUrl: string;
+  imagePosition?: "top" | "center" | "bottom";
+  isFirst?: boolean;
+}
 
 export function TeamMember({
   name,
@@ -15,13 +15,20 @@ export function TeamMember({
   isFirst,
   imagePosition = "center",
 }: TeamMemberProps) {
+  // Create object for dynamic classes
+  const objectPosition = {
+    top: "object-top",
+    center: "object-center",
+    bottom: "object-bottom",
+  }[imagePosition];
+
   return (
     <div className="text-center">
       <div className="relative w-full pb-[100%] mb-4 rounded-lg overflow-hidden">
         <img
           src={imageUrl}
           alt={name}
-          className={`absolute inset-0 w-full h-full object-cover object-${imagePosition}`}
+          className={`absolute inset-0 w-full h-full object-cover ${objectPosition}`}
           loading="lazy"
         />
       </div>
