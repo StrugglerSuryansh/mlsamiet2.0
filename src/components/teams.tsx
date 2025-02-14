@@ -5,7 +5,7 @@ const technicalTeam = [
     name: "Alex Johnson",
     role: "Senior Developer",
     imageUrl:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "/MLSA_WEBSITE/Domain_Heads_photo/suryansh.png",
   },
   {
     name: "Sarah Lee",
@@ -38,7 +38,7 @@ const graphicsTeam = [
     name: "Olivia Martinez",
     role: "Lead Designer",
     imageUrl:
-      "https://images.unsplash.com/photo-1573497019236-17dd59b5fa20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "/MLSA_WEBSITE/Domain_Heads_photo/anmol.jpg",
   },
   {
     name: "Ethan Wilson",
@@ -92,7 +92,7 @@ export function Teams() {
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-center mb-16">Our Teams</h1>
 
-      <section className="mb-16">
+      <section className="mb-20">
         <h2 className="text-3xl font-semibold mb-8">Technical Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {technicalTeam.map((member, index) => (

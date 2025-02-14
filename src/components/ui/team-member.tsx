@@ -13,8 +13,10 @@ export function TeamMember({ name, role, imageUrl, isFirst = false }: TeamMember
             <Image
                 src={imageUrl || "/placeholder.svg"}
                 alt={name}
-                width={300}
-                height={300}
+                width={1}
+                height={1}
+                layout="responsive"
+
                 className="w-full h-auto object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
