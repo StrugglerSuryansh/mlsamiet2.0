@@ -46,7 +46,7 @@ const graphicsTeam = [
 
   },
   {
-    name: "Name missing",
+    name: "Shagun",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/Graphic team/IMG_20250210_173126.jpg",
     imagePosition: "top" as const,
@@ -78,7 +78,7 @@ const contentTeam = [
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/Content team/IMG_20250211_172808.jpg",
     imagePosition: "top" as const,
-      
+
   },
   {
     name: "Name missing 2",
@@ -104,7 +104,7 @@ const eventTeam = [
       "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20241208_144759.jpg",
   },
   {
-    name: "Name missing 2",
+    name: "Bhavya Sharma",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20241228_155612.jpg",
   },
@@ -178,7 +178,7 @@ const prTeam = [
 
   },
   {
-    name: "Name missing 3",
+    name: "prafullit",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/PR team/WhatsApp Image 2024-12-28 at 22.45.34.jpeg",
   },
@@ -224,7 +224,7 @@ const visualTeam = [
       "/MLSA_WEBSITE/volunteer_photo/visual team/Ansh Sharma.jpg",
   },
   {
-    name: "name missing 1",
+    name: "Harshit Ranas",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/visual team/c395055e-2096-41b9-992c-762ccf40cf04.jpg",
   },
