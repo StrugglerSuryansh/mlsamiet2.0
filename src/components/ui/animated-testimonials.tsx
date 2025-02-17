@@ -4,7 +4,8 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Twitter, Linkedin, Instagram } from "lucide-react";
+import { Twitter, Linkedin, Mail } from "lucide-react";
+import { Commudle } from "../icons/Commudle";
 
 type Testimonial = {
   quote: string;
@@ -14,7 +15,8 @@ type Testimonial = {
   social?: {
     twitter?: string;
     linkedin?: string;
-    instagram?: string;
+    email?: string;
+    commudle?: string;
   };
 };
 
@@ -159,14 +161,24 @@ export const AnimatedTestimonials = ({
                     <Linkedin className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
                   </a>
                 )}
-                {testimonials[active].social?.instagram && (
+                {testimonials[active].social?.email && (
                   <a
-                    href={testimonials[active].social?.instagram}
+                    href={`mailto:${testimonials[active].social?.email}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
                   >
-                    <Instagram className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
+                    <Mail className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
+                  </a>
+                )}
+                {testimonials[active].social?.commudle && (
+                  <a
+                    href={testimonials[active].social?.commudle}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
+                  >
+                    <Commudle className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
                   </a>
                 )}
               </motion.div>
