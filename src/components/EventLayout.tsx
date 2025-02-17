@@ -1,7 +1,5 @@
 "use client";
 
-import { HeicImage } from "./ui/HeicImage";
-
 interface EventItem {
   title: string;
   button: string;
@@ -9,8 +7,6 @@ interface EventItem {
 }
 
 export function EventLayout({ items }: { items: EventItem[] }) {
-  const isHeicImage = (src: string) => src.toLowerCase().endsWith(".heic");
-
   return (
     <div className="max-w-7xl mx-auto px-4 py-16 space-y-24">
       {items.map((item, index) => (
@@ -22,21 +18,11 @@ export function EventLayout({ items }: { items: EventItem[] }) {
         >
           <div className="w-full md:w-1/2">
             <div className="relative aspect-square rounded-2xl overflow-hidden">
-              {isHeicImage(item.src) ? (
-                <HeicImage
-                  src={item.src}
-                  alt={item.title}
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              ) : (
-                <img
-                  src={item.src}
-                  alt={item.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              )}
+              <img
+                src={item.src}
+                alt={item.title}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
             </div>
           </div>
 
