@@ -251,7 +251,7 @@ export function Teams() {
       <h1 className="text-4xl font-bold text-center mb-16">Our Teams</h1>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-8">Technical Team</h2>
+        <h2 className="text-5xl font-bold mb-8">Technical Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {technicalTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -260,7 +260,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-8">Graphics Team</h2>
+        <h2 className="text-5xl font-semibold mb-8">Graphics Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {graphicsTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -269,7 +269,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-8">Content Team</h2>
+        <h2 className="text-5xl font-semibold mb-8">Content Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {contentTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -278,7 +278,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-8">Event Team</h2>
+        <h2 className="text-5xl font-semibold mb-8">Event Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {eventTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -287,7 +287,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-8">PR Team</h2>
+        <h2 className="text-5xl font-semibold mb-8">PR Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {prTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -296,7 +296,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-8">Social Media Team</h2>
+        <h2 className="text-5xl font-semibold mb-8">Social Media Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {socialTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -305,7 +305,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-8">Visual Team</h2>
+        <h2 className="text-5xl font-semibold mb-8">Visual Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {visualTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />

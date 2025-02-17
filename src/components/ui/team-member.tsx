@@ -24,7 +24,7 @@ export function TeamMember({
 
   return (
     <div className="text-center">
-      <div className="relative w-full pb-[100%] mb-4 rounded-lg overflow-hidden">
+      <div className="relative w-full pb-[100%] mb-4 rounded-[10px] overflow-hidden">
         <img
           src={imageUrl}
           alt={name}
