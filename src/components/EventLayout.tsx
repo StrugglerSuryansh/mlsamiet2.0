@@ -15,20 +15,30 @@ export function EventLayout({ items }: { items: EventItem[] }) {
   }>({});
 
   useEffect(() => {
-    items.forEach(async (item) => {
-      if (item.src.toLowerCase().endsWith(".heic")) {
-        try {
-          const response = await fetch(item.src);
-          const blob = await response.blob();
-          const convertedBlob = await heic2any({ blob, toType: "image/jpeg" });
-          const blobToUse = Array.isArray(convertedBlob) ? convertedBlob[0] : convertedBlob;
-          const convertedUrl = URL.createObjectURL(blobToUse);
-          setConvertedImages((prev) => ({ ...prev, [item.src]: convertedUrl }));
-        } catch (error) {
-          console.error("Error converting HEIC image:", error);
+    if (typeof window !== "undefined") {
+      items.forEach(async (item) => {
+        if (item.src.toLowerCase().endsWith(".heic")) {
+          try {
+            const response = await fetch(item.src);
+            const blob = await response.blob();
+            const convertedBlob = await heic2any({
+              blob,
+              toType: "image/jpeg",
+            });
+            const blobToUse = Array.isArray(convertedBlob)
+              ? convertedBlob[0]
+              : convertedBlob;
+            const convertedUrl = URL.createObjectURL(blobToUse);
+            setConvertedImages((prev) => ({
+              ...prev,
+              [item.src]: convertedUrl,
+            }));
+          } catch (error) {
+            console.error("Error converting HEIC image:", error);
+          }
         }
-      }
-    });
+      });
+    }
   }, [items]);
 
   return (
