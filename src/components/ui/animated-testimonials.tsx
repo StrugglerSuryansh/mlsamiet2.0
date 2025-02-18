@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { Twitter, Linkedin, Mail } from "lucide-react";
 import { Commudle } from "../icons/Commudle";
 
-type Testimonial = {
+export type Testimonial = {
   quote: string;
   name: string;
   designation: string;
