@@ -1,13 +1,5 @@
-"use client";
-import { SpotlightNewDemo } from "@/components/HeroSection";
-import { MagicCardDemo } from "@/components/MagicCardDemo";
-import { MarqueeDemo } from "@/components/MarqueeDemo";
-
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonials";
-import ContactForm from "@/components/ContactForm";
-import CanvasRevealEffectDemo from "@/components/CanvasRevealEffectDemo";
-import MembersPage from "./members/page";
-import Cards from "@/components/cards";
+import { useEffect, useState } from "react";
 
 const testimonials = [
   {
@@ -19,8 +11,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/yashg",
       linkedin: "https://www.linkedin.com/in/yash-gupta-b59877280/",
-      email: "yashg031124@gmail.com"
-    }
+      email: "yashg031124@gmail.com",
+    },
   },
   {
     quote:
@@ -31,8 +23,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/Muskanjain1702",
       linkedin: "https://www.linkedin.com/in/muskanjain1702/",
-      email: "muskanjain1702@gmail.com"
-    }
+      email: "muskanjain1702@gmail.com",
+    },
   },
   {
     quote:
@@ -42,8 +34,8 @@ const testimonials = [
     src: "/MLSA_WEBSITE/Domain_Heads_photo/yagyansh.jpg",
     social: {
       linkedin: "https://www.linkedin.com/in/yagyansh-singh-deshwal/",
-      email: "yagyanshsinghdeshwal@gmail.com"
-    }
+      email: "yagyanshsinghdeshwal@gmail.com",
+    },
   },
   {
     quote:
@@ -54,8 +46,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/Suryanshpatwal1",
       linkedin: "https://www.linkedin.com/in/suryansh-patwal/",
-      email: "suryanshpatwal@gmail.com"
-    }
+      email: "suryanshpatwal@gmail.com",
+    },
   },
   {
     quote:
@@ -66,8 +58,9 @@ const testimonials = [
     social: {
       linkedin: "https://www.linkedin.com/in/tanushka-kashyap-3b5a28211/",
       email: "tanushkakashyap506@gmail.com",
-      commudle: "https://www.commudle.com/users/da6ac7497d07e91ee07ea2683c57a17c"
-    }
+      commudle:
+        "https://www.commudle.com/users/da6ac7497d07e91ee07ea2683c57a17c",
+    },
   },
   {
     quote:
@@ -78,8 +71,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/anmolkumar001",
       linkedin: "https://www.linkedin.com/in/anmolkumar01/",
-      email: "anmolkumar.cod01@gmail.com"
-    }
+      email: "anmolkumar.cod01@gmail.com",
+    },
   },
   {
     quote:
@@ -90,8 +83,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/Pariagarwal",
       linkedin: "https://www.linkedin.com/in/pari-agarwal-3153bb290/",
-      email: "agarwalpari329@gmail.com"
-    }
+      email: "agarwalpari329@gmail.com",
+    },
   },
   {
     quote:
@@ -102,22 +95,43 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/asitupadhyay",
       linkedin: "https://www.linkedin.com/in/asit-upadhyay-5b469a207/",
-      email: "asit.upadhyay793@gmail.com"
-    }
-  }
+      email: "asit.upadhyay793@gmail.com",
+    },
+  },
 ];
 
-export default function Home() {
+export default function KnowMore() {
   return (
-    <div>
-      <SpotlightNewDemo />
-      {/* might have to remove that */}
-      {/* <CanvasRevealEffectDemo /> */}
-      <Cards />
-      {/* <MagicCardDemo /> */}
-      <MarqueeDemo />
-      <AnimatedTestimonialsDemo testimonials={testimonials} title="Meet the Team"/>
-      <ContactForm />
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        {/* Left side - Text content */}
+        <div className="space-y-6">
+          <h1 className="text-4xl font-bold text-blue-600 dark:text-cyan-400">
+            Meet Our Team
+          </h1>
+          <p className="text-lg text-gray-700 dark:text-gray-300">
+            Our dedicated team of domain heads and leaders work together to
+            create impactful experiences and drive innovation within the MLSA
+            community. Each member brings unique skills and perspectives to help
+            achieve our mission.
+          </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300">
+            From technical expertise to creative content, our diverse team
+            collaborates to deliver excellence in every aspect of our
+            organization.
+          </p>
+        </div>
+
+        {/* Right side - Testimonials */}
+        <div>
+          <AnimatedTestimonialsDemo
+            testimonials={testimonials}
+            autoChangeInterval={2000} // 2000 seconds
+            isAutoChange={true} // Enable auto-changing
+            title=""
+          />
+        </div>
+      </div>
     </div>
   );
 }

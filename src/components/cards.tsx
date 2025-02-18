@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Target, Compass, Eye } from 'lucide-react';
 import { TextAnimate } from './magicui/text-animate';
+import Link from 'next/link';
 
 interface CardProps {
     title: string;
@@ -88,6 +89,11 @@ function App() {
                             <FlipCard key={index} {...card} />
                         ))}
                     </div>
+                </div>
+                <div className="flex justify-end mt-8 mr-8">
+                    <Link href="/knowmore" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105">
+                        Know More
+                    </Link>
                 </div>
             </div>
         </>
