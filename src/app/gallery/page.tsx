@@ -57,26 +57,26 @@ const introToMLSAArray = [
   "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_0455_exported_1566.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_0468.JPG",
   "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_5868.JPG",
-]
+];
 
 const prayasArray = [
   "/MLSA_WEBSITE/EVENT_PHOTO/prayas",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_095734.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_100212.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_111933AMByGPSMapCamera.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_120926PMByGPSMapCamera.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_121006PMByGPSMapCamera.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3021.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3022.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3120.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3122.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3139.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3152.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3157.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3158.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/PXL_20240529_052718044.PORTRAIT.jpg",
-"/MLSA_WEBSITE/EVENT_PHOTO/prayas/PXL_20240529_074308463.jpg",
-]
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_095734.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_100212.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_111933AMByGPSMapCamera.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_120926PMByGPSMapCamera.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_121006PMByGPSMapCamera.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3021.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3022.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3120.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3122.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3139.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3152.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3157.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3158.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/PXL_20240529_052718044.PORTRAIT.jpg",
+  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/PXL_20240529_074308463.jpg",
+];
 
 const samaarambhArray = [
   "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0721.jpg",
@@ -101,7 +101,7 @@ const samaarambhArray = [
   "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/PXL_20241228_050829804.MP.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/PXL_20241228_071923205.MP.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/PXL_20241228_090110793.MP.jpg",
-]
+];
 
 // Combine all images into one array
 
@@ -111,92 +111,96 @@ const Gallery = () => {
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 text-center">
         Sneak Peek Into MLSA&apos;s Events
       </h1>
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-5 text-center">
-        AVASAR
-      </h1>
 
-      <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
-        {avasarImagesArray.map((image, index) => (
-          <div key={index} className="break-inside-avoid">
-            <img
-              className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
-              src={image}
-              alt={`Event image ${index + 1}`}
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
+      <section id="avasar">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-5 text-center">
+          AVASAR
+        </h1>
+        <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
+          {avasarImagesArray.map((image, index) => (
+            <div key={index} className="break-inside-avoid">
+              <img
+                className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
+                src={image}
+                alt={`Event image ${index + 1}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center">
-        FUN MEET
-      </h1>
+      <section id="funmeet">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center">
+          FUN MEET
+        </h1>
+        <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
+          {funMeetArray.map((image, index) => (
+            <div key={index} className="break-inside-avoid">
+              <img
+                className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
+                src={image}
+                alt={`Event image ${index + 1}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
-        {funMeetArray.map((image, index) => (
-          <div key={index} className="break-inside-avoid">
-            <img
-              className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
-              src={image}
-              alt={`Event image ${index + 1}`}
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
+      <section id="intromlsa">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center">
+          INTRO TO MLSA
+        </h1>
+        <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
+          {introToMLSAArray.map((image, index) => (
+            <div key={index} className="break-inside-avoid">
+              <img
+                className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
+                src={image}
+                alt={`Event image ${index + 1}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center">
-        INTRO TO MLSA
-      </h1>
+      <section id="prayas">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center">
+          PRAYAS
+        </h1>
+        <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
+          {prayasArray.map((image, index) => (
+            <div key={index} className="break-inside-avoid">
+              <img
+                className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
+                src={image}
+                alt={`Event image ${index + 1}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
-        {introToMLSAArray.map((image, index) => (
-          <div key={index} className="break-inside-avoid">
-            <img
-              className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
-              src={image}
-              alt={`Event image ${index + 1}`}
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
-
-
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center">
-        PRAYAS
-      </h1>
-
-      <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
-        {prayasArray.map((image, index) => (
-          <div key={index} className="break-inside-avoid">
-            <img
-              className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
-              src={image}
-              alt={`Event image ${index + 1}`}
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
-
-
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center">
-        SAMAARAMBH
-      </h1>
-
-      <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
-        {samaarambhArray.map((image, index) => (
-          <div key={index} className="break-inside-avoid">
-            <img
-              className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
-              src={image}
-              alt={`Event image ${index + 1}`}
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
+      <section id="samaarambh">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center">
+          SAMAARAMBH
+        </h1>
+        <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
+          {samaarambhArray.map((image, index) => (
+            <div key={index} className="break-inside-avoid">
+              <img
+                className="w-full h-auto rounded-[10px] hover:opacity-90 transition-opacity duration-300 shadow-sm hover:shadow-md"
+                src={image}
+                alt={`Event image ${index + 1}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

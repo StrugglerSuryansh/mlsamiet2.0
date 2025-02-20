@@ -12,7 +12,7 @@ import Cards from "@/components/cards";
 const testimonials = [
   {
     quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+      "A dynamic lead at MLSA MIET, passionate about AWS, development, and scalable applications, driving impactful innovations.",
     name: "Yash Gupta",
     designation: "Lead",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/yash1.JPG",
@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     quote:
-      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+      "A visionary leader at MLSA MIET, proficient in Java and Python, blending AI expertise with social media enthusiasm. ",
     name: "Muskan Jain",
     designation: "Lead",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/MUSKAN2.jpg",
@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     quote:
-      "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+      "A cheerful and dedicated soul ensuring smooth events, skilled in Python, SQL, C, and DSA, making moments memorable",
     name: "Yagyansh Singh Deshwal",
     designation: "Head Of Operations",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/yagyansh.jpg",
@@ -47,7 +47,7 @@ const testimonials = [
   },
   {
     quote:
-      "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+      "A tech enthusiast scaling technology, leveraging web development, MERN stack, and DevOps to build seamless solutions. ",
     name: "Suryansh",
     designation: "Tech Head",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/suryansh.png",
@@ -59,7 +59,7 @@ const testimonials = [
   },
   {
     quote:
-      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      "A creative mind behind content, passionate about Blockchain, Java, and frontend, crafting engaging and tech-driven narratives.",
     name: "Tanushka Kashyap",
     designation: "Content Head",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/tanushka.jpg",
@@ -71,7 +71,7 @@ const testimonials = [
   },
   {
     quote:
-      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      "An expert bringing graphics to life, blending aesthetics with functionality, backed by a strong grip on frontend.",
     name: "Anmol Kumar",
     designation: "Graphics Head",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/anmol.jpg",
@@ -83,7 +83,7 @@ const testimonials = [
   },
   {
     quote:
-      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      "A skilled communicator and multitasker, leading PR and outreach while bringing a developer’s touch to collaborations.",
     name: "Pari Aggarwal",
     designation: "Outreach Head",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/pari.png",
@@ -95,7 +95,7 @@ const testimonials = [
   },
   {
     quote:
-      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      "A storyteller capturing impactful moments, blending competitive programming skills with expertise in C, C++, and DSA.",
     name: "Asit Upadhyay",
     designation: "Media Head",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/ASIT_UPADHYAY.jpg",
