@@ -117,7 +117,7 @@ export default function Home() {
       <MarqueeDemo />
       <AnimatedTestimonialsDemo
         testimonials={testimonials}
-        title="Meet the Team"
+        title="MEET THE LEADERS"
       />
       <ContactForm />
     </div>

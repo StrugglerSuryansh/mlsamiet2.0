@@ -14,9 +14,9 @@ type SpotlightProps = {
 }
 
 export const Spotlight = ({
-  gradientFirst = "radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(190, 100%, 85%, 0.3) 0%, hsla(190, 100%, 55%, 0.15) 50%, hsla(190, 100%, 45%, 0) 80%)",
-  gradientSecond = "radial-gradient(50% 50% at 50% 50%, hsla(190, 100%, 85%, 0.25) 0%, hsla(190, 100%, 55%, 0.15) 80%, transparent 100%)",
-  gradientThird = "radial-gradient(50% 50% at 50% 50%, hsla(190, 100%, 85%, 0.2) 0%, hsla(190, 100%, 45%, 0.1) 80%, transparent 100%)",
+  gradientFirst = "radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(210, 95%, 60%, 0.3) 0%, hsla(210, 95%, 60%, 0.15) 50%, hsla(210, 95%, 60%, 0) 80%)",
+  gradientSecond = "radial-gradient(50% 50% at 50% 50%, hsla(210, 95%, 60%, 0.25) 0%, hsla(210, 95%, 60%, 0.15) 80%, transparent 100%)",
+  gradientThird = "radial-gradient(50% 50% at 50% 50%, hsla(210, 95%, 60%, 0.2) 0%, hsla(210, 95%, 60%, 0.1) 80%, transparent 100%)",
   translateY = -350,
   width = 560,
   height = 1380,
@@ -125,4 +125,3 @@ export const Spotlight = ({
     </motion.div>
   )
 }
-

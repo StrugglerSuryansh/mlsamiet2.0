@@ -67,9 +67,9 @@ const ReviewCard = ({
       <div className="flex flex-row items-center gap-3 mb-4">
         {" "}
         {/* increased bottom margin */}
-        <img className="rounded-full h-12 w-12 object-cover" alt="" src={img} />
+        {/* <img className="rounded-full h-12 w-12 object-cover" alt="" src={img} /> */}
         <div className="flex flex-col">
-          <figcaption className="text-base font-medium dark:text-white">
+          <figcaption className="text-base font-bold dark:text-white">
             {name}
           </figcaption>
           <p className="text-sm font-medium dark:text-white/40">{username}</p>
@@ -85,13 +85,13 @@ const ReviewCard = ({
 export function MarqueeDemo() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 text-blue-400 dark:text-cyan-400 text-center font-bold font-mono m-4">
+      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4">
         <TextAnimate
           animation="blurInUp"
           by="character"
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
         >
-          Hear from our alumni
+          VOICES OF EXPERIENCE
         </TextAnimate>
       </div>
 
