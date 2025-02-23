@@ -37,12 +37,12 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <Link href="/">
               <Image
-                src={"/mlsamietlogo1.png"}
-                alt="MLSA MIET Logo"
-                width={400}
-                height={400}
-                loading="eager"
-                className="w-auto h-[35px] md:h-[40px] lg:h-[80px]"
+          src={"/mlsamietlogo1.png"}
+          alt="MLSA MIET Logo"
+          width={400}
+          height={400}
+          loading="eager"
+          className="w-auto h-[35px] md:h-[40px] lg:h-[80px]"
               />
             </Link>
             <span className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-[20px] font-semibold text-transparent lg:text-[1.7vw]">
