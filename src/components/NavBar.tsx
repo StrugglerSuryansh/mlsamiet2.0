@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed left-0 right-0 top-0 z-[1000] w-full py-2 px-4 sm:px-6 lg:px-6 border-b-2 border-cyan-200 ${showBackground ? "backdrop-blur-md" : "bg-white "
+        className={`fixed left-0 right-0 top-0 z-[1000] w-full py-4 px-4 sm:px-6 lg:px-6 border-b-2 border-cyan-200 ${showBackground ? "backdrop-blur-md" : "bg-white "
           }`}
       >
         <div className="flex items-center justify-between max-w-[1920px] mx-auto">
@@ -45,8 +45,8 @@ const Navbar = () => {
                 className="w-auto h-[35px] md:h-[40px] lg:h-[80px]"
               />
             </Link>
-            <span className="text-[#203A61] bg-clip-text text-[20px] font-semibold text-transparent lg:text-[1.7vw]">
-              MLSA <span className="hidden md:inline-block text-[#203A61]">MIET</span>
+            <span className="text-[#203A61] font-semibold text-transparent lg:text-[1.7vw]">
+              MLSA <span className="hidden md:inline-block">MIET</span>
             </span>
           </div>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className=" hidden md:flex items-center gap-4 xl:gap-9 ]text-[#203A61]">
+          <div className="hidden md:flex items-center gap-4 xl:gap-6">
             <NavbarItem href="/events">Events</NavbarItem>
             <NavbarItem href="/gallery">Gallery</NavbarItem>
             <NavbarItem href="/members">Members</NavbarItem>
