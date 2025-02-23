@@ -60,16 +60,15 @@ const Navbar = () => {
             <NavbarItem href="/events">Events</NavbarItem>
             <NavbarItem href="/gallery">Gallery</NavbarItem>
             <NavbarItem href="/members">Members</NavbarItem>
-            <NavbarItem  href="/#contact">
+            <NavbarItem href="/#contact">
               Join Us
             </NavbarItem>
+          </div>
         </div>
-      </div>
-    </nav >
+      </nav >
       <MobileView visible={showMobileMenu} />
     </>
   )
 }
 
 export default Navbar
-
