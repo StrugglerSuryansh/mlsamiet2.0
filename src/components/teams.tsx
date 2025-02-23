@@ -74,14 +74,14 @@ const contentTeam = [
       "/MLSA_WEBSITE/volunteer_photo/Content team/Geetanshigoel.jpg",
   },
   {
-    name: "Name missing",
+    name: "Aastha",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/Content team/IMG_20250211_172808.jpg",
     imagePosition: "top" as const,
 
   },
   {
-    name: "Name missing 2",
+    name: "Khushi Mavi",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/Content team/IMG-20250210-WA0006.jpg",
   },
@@ -99,24 +99,24 @@ const eventTeam = [
       "/MLSA_WEBSITE/Domain_Heads_photo/yagyansh.jpg",
   },
   {
-    name: "Name missing 1",
+    name: "Ansh Goel",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20241208_144759.jpg",
   },
   {
-    name: "Bhavya Sharma",
+    name: "Avni Mittal",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20241228_155612.jpg",
   },
   {
-    name: "Name missing 3",
+    name: "Bhumika Nagar",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20250210_214019.jpg",
     imagePosition: "top" as const,
 
   },
   {
-    name: "Name missing 4",
+    name: "Daksh Goswami",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20250211_015050.jpg",
   },
@@ -128,7 +128,7 @@ const eventTeam = [
 
   },
   {
-    name: "Name missing 7",
+    name: "Vaibhav",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/event team/Screenshot_20241016_201031_Chrome.jpg",
   },
@@ -165,13 +165,13 @@ const prTeam = [
       "/MLSA_WEBSITE/volunteer_photo/PR team/Sahil Gulati.jpg",
   },
   {
-    name: "Name missing 1",
+    name: "Bhavya Sharma",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/PR team/Screenshot_2025-02-09-18-10-36-67_99c04817c0de5652397fc8b56c3b3817.jpg",
 
   },
   {
-    name: "Name missing 2",
+    name: "Gungun Goel",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/PR team/Screenshot_20250209_180247_Gallery.jpg",
     imagePosition: "top" as const,
@@ -191,12 +191,12 @@ const socialTeam = [
       "/MLSA_WEBSITE/Domain_Heads_photo/MUSKAN2.jpg",
   },
   {
-    name: "Name missing 1",
+    name: "Yash Goel",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/social team/IMG_20241207_222905_835.jpg",
   },
   {
-    name: "Name missing 2",
+    name: "Navya",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/social team/IMG-20241025-WA0023.jpg",
   },
@@ -206,7 +206,7 @@ const socialTeam = [
       "/MLSA_WEBSITE/volunteer_photo/social team/Tanishkaagg.jpg",
   },
   {
-    name: "Name missing 3",
+    name: "Khushagra",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/social team/WhatsApp Image 2025-02-09 at 11.20.04 PM.jpeg",
   },
