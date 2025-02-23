@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface EventItem {
   title: string;
+  body: string;
   button: string;
   src: string;
   sectionId: string;
@@ -28,9 +29,17 @@ export function EventLayout({ items }: { items: EventItem[] }) {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-6">{item.title}</h2>
-            <Link href={`/gallery#${item.sectionId}`}>
+          <div className="w-full md:w-1/2 flex flex-col items-center space-y-6">
+            <h2 className="text-4xl font-bold text-center w-full">
+              {item.title}
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed text-center">
+              {item.body}
+            </p>
+            <Link
+              href={`/gallery#${item.sectionId}`}
+              className="flex justify-center"
+            >
               <button className="px-6 py-3 bg-white text-black rounded-xl hover:shadow-lg transition duration-200">
                 {item.button}
               </button>

@@ -6,16 +6,16 @@ import { useEffect, useState } from "react";
 export default function KnowMore() {
   const images = [
     {
-      src: "/MLSA_WEBSITE/SPEAKERS_PHOTO/IMG-20250211-WA0002.jpg",
+      src: "/mlsamietlogo1.png",
       objectPosition: "center",
     },
     {
-      src: "/MLSA_WEBSITE/SPEAKERS_PHOTO/IMG-20250211-WA0003.jpg",
+      src: "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_1001.JPG",
       objectPosition: "center",
     },
     {
-      src: "/MLSA_WEBSITE/SPEAKERS_PHOTO/IMG-20250211-WA0004.jpg",
-      objectPosition: "top",
+      src: "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/PXL_20241014_105027481.jpg",
+      objectPosition: "center",
     },
   ];
 
@@ -25,16 +25,17 @@ export default function KnowMore() {
         <div className="space-y-6">
           <h1 className="text-4xl font-bold">About Us</h1>
           <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            MLSA MIET is a dynamic community where technology meets passion. We
+            bring together aspiring developers, designers, and tech enthusiasts,
+            offering hands-on workshops, real-world projects, and networking
+            opportunities that bridge the gap between academics and industry.
           </p>
           <p className="text-lg">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            With a commitment to learning and collaboration, we empower students
+            to explore emerging technologies, share knowledge, and build
+            impactful solutions. As we grow, our vision is to nurture future
+            leaders who drive innovation and shape the who drive innovation and
+            shape the ever-evolving tech landscape.
           </p>
         </div>
         <div className="h-[500px]">

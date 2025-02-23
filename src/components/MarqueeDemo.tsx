@@ -30,7 +30,7 @@ const reviews = [
   {
     name: "Ayon roy",
     username: "@ayon_roy",
-    body: "t was a pleasure to speak at an event organized by MLSA MIET and it was such a great feeling to be amongst the community members for whom such events are a great platform to learn and explore.The pool of speakers at the event was so coveted that it was an awesome learning experience for me too. In short, it was a great experience for me to join the event and i look forward to more such opportunities.",
+    body: "It was a pleasure to speak at an event organized by MLSA MIET and it was such a great feeling to be amongst the community members for whom such events are a great platform to learn and explore.The pool of speakers at the event was so coveted that it was an awesome learning experience for me too. In short, it was a great experience for me to join the event and i look forward to more such opportunities.",
     img: "https://avatar.vercel.sh/jenny",
   },
   {
