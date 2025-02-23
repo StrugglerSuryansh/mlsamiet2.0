@@ -15,12 +15,12 @@ function SingleCard({ title, description, link, icon }: NewsletterCardProps) {
   return (
     <div className="w-80 h-96">
       <div className="bg-white p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center space-y-4 hover:shadow-xl transition-shadow">
-        <div className="text-blue-600 w-16 h-16">{icon}</div>
+        <div className="text-[#203A61] w-16 h-16">{icon}</div>
         <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
         <p className="text-gray-600 text-center">{description}</p>
         <Link href={link}>
-          <button className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors duration-200">
-            View Newsletter
+          <button className="px-6 py-3 bg-[#203A61] text-white rounded-xl hover:bg-[#1f3e6d] transition-colors duration-200">
+            KNOW MORE
           </button>
         </Link>
       </div>
@@ -31,19 +31,19 @@ function SingleCard({ title, description, link, icon }: NewsletterCardProps) {
 export function NewsletterCards() {
   const newsletters = [
     {
-      title: "January 25",
+      title: "January '25",
       description: "Stay updated with our monthly progress and achievements",
       link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/mlsa-miet-chronicles-a-thrilling-start-to-2025-with-mlsa",
       icon: <Newspaper className="w-full h-full" />,
     },
     {
-      title: "December 24",
+      title: "December '24",
       description: "Deep dive into technical content and learning resources",
       link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/from-us-to-you-a-heartwarming-look-back-at-2024",
       icon: <Newspaper className="w-full h-full" />,
     },
     {
-      title: "November 24 ",
+      title: "November '24 ",
       description: "Catch up on our latest events and community activities",
       link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/3rd-edition-of-mlsa-miet",
       icon: <Newspaper className="w-full h-full" />,
@@ -52,13 +52,13 @@ export function NewsletterCards() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 text-cyan-400 dark:text-cyan-400 text-center font-bold font-mono m-4">
+      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4">
         <TextAnimate
           animation="blurInUp"
           by="character"
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
         >
-          Explore MLSA Newsletters
+          HIGHLIGHTS
         </TextAnimate>
       </div>
 

@@ -20,9 +20,8 @@ function FlipCard({ title, icon, frontContent, backContent }: CardProps) {
         onClick={() => setIsFlipped(!isFlipped)}
       >
         <div
-          className={`relative w-full h-full transition-transform duration-500 transform-style-3d cursor-pointer ${
-            isFlipped ? "rotate-y-180" : ""
-          }`}
+          className={`relative w-full h-full transition-transform duration-500 transform-style-3d cursor-pointer ${isFlipped ? "rotate-y-180" : ""
+            }`}
         >
           {/* Front of card */}
           <div className="absolute w-full h-full backface-hidden">
@@ -35,7 +34,7 @@ function FlipCard({ title, icon, frontContent, backContent }: CardProps) {
 
           {/* Back of card */}
           <div className="absolute w-full h-full backface-hidden rotate-y-180">
-            <div className="bg-blue-600 p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center">
+            <div className="bg-blue-400 p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center">
               <p className="text-white text-center text-lg ">
                 {backContent}
               </p>
@@ -84,7 +83,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 text-cyan-400 dark:text-cyan-400 text-center font-bold font-mono m-4">
+      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4">
         <TextAnimate
           animation="blurInUp"
           by="character"
@@ -109,7 +108,7 @@ function App() {
           {/* Added mb-4 */}
           <Link
             href="/knowmore"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105"
+            className="bg-[#203A61] hover:bg-[##607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105"
           >
             Know More
           </Link>
