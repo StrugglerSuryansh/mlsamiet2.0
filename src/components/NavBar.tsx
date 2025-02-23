@@ -45,7 +45,7 @@ const Navbar = () => {
                 className="w-auto h-[35px] md:h-[40px] lg:h-[80px]"
               />
             </Link>
-            <span className="text-[#203A61] font-semibold text-transparent lg:text-[1.7vw]">
+            <span className="bg-gradient-to-r from-[#0070C5] to-[#3BABCF] bg-clip-text text-[20px] font-semibold text-transparent lg:text-[1.7vw]">
               MLSA <span className="hidden md:inline-block">MIET</span>
             </span>
           </div>
@@ -60,12 +60,12 @@ const Navbar = () => {
             <NavbarItem href="/events">Events</NavbarItem>
             <NavbarItem href="/gallery">Gallery</NavbarItem>
             <NavbarItem href="/members">Members</NavbarItem>
-            <NavbarItem href="/#contact">
+            <NavbarItem  href="/#contact">
               Join Us
             </NavbarItem>
-          </div>
         </div>
-      </nav >
+      </div>
+    </nav >
       <MobileView visible={showMobileMenu} />
     </>
   )
