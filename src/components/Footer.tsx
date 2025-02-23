@@ -20,8 +20,7 @@ const Footer = () => {
             <a href='https://x.com/MlsaMiet' className='text-3xl text-primary'><FaXTwitter /></a>
             <a href='https://chat.whatsapp.com/DXjoWMoEPsfBeCrVtBJNqc' className='text-3xl text-primary'><FaWhatsappSquare /></a>
             <a href='https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology' className='text-3xl text-primary'>
-            {/* <img className='w-8' src={Commudle} alt=""/> */}
-            {/* <SiLinktree />  */}
+              <img className='w-8' src="commudle.svg" alt="" />
             </a>
           </div>
           <div className='font-semibold'>
