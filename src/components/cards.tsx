@@ -44,7 +44,7 @@ function FlipCard({ title, icon, frontContent, backContent }: CardProps) {
       </div>
     </>
   );
-}
+} 
 
 function App() {
   const cards = [

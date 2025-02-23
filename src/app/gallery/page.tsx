@@ -62,7 +62,6 @@ const introToMLSAArray = [
 ];
 
 const prayasArray = [
-  "/MLSA_WEBSITE/EVENT_PHOTO/prayas",
   "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_095734.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_100212.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_111933AMByGPSMapCamera.jpg",
@@ -156,7 +155,7 @@ const Gallery = () => {
       </section>
 
       <section id="funmeet">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-cente  text-[#203A61]">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center  text-[#203A61]">
           <TextAnimate>
 
             FUN MEET
