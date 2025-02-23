@@ -206,7 +206,7 @@ const socialTeam = [
       "/MLSA_WEBSITE/volunteer_photo/social team/Tanishkaagg.jpg",
   },
   {
-    name: "Khushagra",
+    name: "Kushagra",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/social team/WhatsApp Image 2025-02-09 at 11.20.04 PM.jpeg",
   },
