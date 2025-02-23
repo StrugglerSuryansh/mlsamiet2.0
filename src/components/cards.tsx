@@ -36,7 +36,7 @@ function FlipCard({ title, icon, frontContent, backContent }: CardProps) {
           {/* Back of card */}
           <div className="absolute w-full h-full backface-hidden rotate-y-180">
             <div className="bg-blue-600 p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center">
-              <p className="text-white text-center text-lg whitespace-pre-line">
+              <p className="text-white text-center text-lg ">
                 {backContent}
               </p>
             </div>
