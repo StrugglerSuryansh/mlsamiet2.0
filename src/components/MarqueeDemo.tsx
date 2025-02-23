@@ -36,7 +36,7 @@ const reviews = [
   {
     name: "Rohit Yadav",
     username: "@rohit_yadav",
-    body: "Speaking at MLSA MIET was an inspiring experience—engaging with a tech-driven community passionate about innovation and problem-solving. The energy and curiosity of the students made every discussion impactful. Excited for future collaborations!",
+    body: "Had an amazing experience speaking at MLSA MIET! The passion and curiosity of the students created an engaging atmosphere, making every discussion insightful. It was great to connect with a community so dedicated to innovation and problem-solving. Looking forward to more such collaborations!",
     img: "https://avatar.vercel.sh/james",
   },
 ];
