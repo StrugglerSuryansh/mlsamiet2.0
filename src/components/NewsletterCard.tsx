@@ -31,21 +31,21 @@ function SingleCard({ title, description, link, icon }: NewsletterCardProps) {
 export function NewsletterCards() {
   const newsletters = [
     {
-      title: "Monthly Updates",
+      title: "January 25",
       description: "Stay updated with our monthly progress and achievements",
-      link: "/newsletter/monthly",
+      link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/mlsa-miet-chronicles-a-thrilling-start-to-2025-with-mlsa",
       icon: <Newspaper className="w-full h-full" />,
     },
     {
-      title: "Tech Insights",
+      title: "December 24",
       description: "Deep dive into technical content and learning resources",
-      link: "/newsletter/tech",
+      link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/from-us-to-you-a-heartwarming-look-back-at-2024",
       icon: <Newspaper className="w-full h-full" />,
     },
     {
-      title: "Event Highlights",
+      title: "November 24 ",
       description: "Catch up on our latest events and community activities",
-      link: "/newsletter/events",
+      link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/3rd-edition-of-mlsa-miet",
       icon: <Newspaper className="w-full h-full" />,
     },
   ];
