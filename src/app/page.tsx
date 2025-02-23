@@ -2,12 +2,12 @@
 import { SpotlightNewDemo } from "@/components/HeroSection";
 import { MagicCardDemo } from "@/components/MagicCardDemo";
 import { MarqueeDemo } from "@/components/MarqueeDemo";
-
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonials";
 import ContactForm from "@/components/ContactForm";
 import CanvasRevealEffectDemo from "@/components/CanvasRevealEffectDemo";
 import MembersPage from "./members/page";
 import Cards from "@/components/cards";
+import { NewsletterCards } from "@/components/NewsletterCard";
 
 const testimonials = [
   {
@@ -19,8 +19,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/yashg",
       linkedin: "https://www.linkedin.com/in/yash-gupta-b59877280/",
-      email: "yashg031124@gmail.com"
-    }
+      email: "yashg031124@gmail.com",
+    },
   },
   {
     quote:
@@ -31,8 +31,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/Muskanjain1702",
       linkedin: "https://www.linkedin.com/in/muskanjain1702/",
-      email: "muskanjain1702@gmail.com"
-    }
+      email: "muskanjain1702@gmail.com",
+    },
   },
   {
     quote:
@@ -42,8 +42,8 @@ const testimonials = [
     src: "/MLSA_WEBSITE/Domain_Heads_photo/yagyansh.jpg",
     social: {
       linkedin: "https://www.linkedin.com/in/yagyansh-singh-deshwal/",
-      email: "yagyanshsinghdeshwal@gmail.com"
-    }
+      email: "yagyanshsinghdeshwal@gmail.com",
+    },
   },
   {
     quote:
@@ -54,8 +54,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/Suryanshpatwal1",
       linkedin: "https://www.linkedin.com/in/suryansh-patwal/",
-      email: "suryanshpatwal@gmail.com"
-    }
+      email: "suryanshpatwal@gmail.com",
+    },
   },
   {
     quote:
@@ -66,8 +66,9 @@ const testimonials = [
     social: {
       linkedin: "https://www.linkedin.com/in/tanushka-kashyap-3b5a28211/",
       email: "tanushkakashyap506@gmail.com",
-      commudle: "https://www.commudle.com/users/da6ac7497d07e91ee07ea2683c57a17c"
-    }
+      commudle:
+        "https://www.commudle.com/users/da6ac7497d07e91ee07ea2683c57a17c",
+    },
   },
   {
     quote:
@@ -78,8 +79,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/anmolkumar001",
       linkedin: "https://www.linkedin.com/in/anmolkumar01/",
-      email: "anmolkumar.cod01@gmail.com"
-    }
+      email: "anmolkumar.cod01@gmail.com",
+    },
   },
   {
     quote:
@@ -90,8 +91,8 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/Pariagarwal",
       linkedin: "https://www.linkedin.com/in/pari-agarwal-3153bb290/",
-      email: "agarwalpari329@gmail.com"
-    }
+      email: "agarwalpari329@gmail.com",
+    },
   },
   {
     quote:
@@ -102,21 +103,22 @@ const testimonials = [
     social: {
       commudle: "https://www.commudle.com/users/asitupadhyay",
       linkedin: "https://www.linkedin.com/in/asit-upadhyay-5b469a207/",
-      email: "asit.upadhyay793@gmail.com"
-    }
-  }
+      email: "asit.upadhyay793@gmail.com",
+    },
+  },
 ];
 
 export default function Home() {
   return (
     <div>
       <SpotlightNewDemo />
-      {/* might have to remove that */}
-      {/* <CanvasRevealEffectDemo /> */}
       <Cards />
-      {/* <MagicCardDemo /> */}
+      <NewsletterCards />
       <MarqueeDemo />
-      <AnimatedTestimonialsDemo testimonials={testimonials} title="Meet the Team"/>
+      <AnimatedTestimonialsDemo
+        testimonials={testimonials}
+        title="Meet the Team"
+      />
       <ContactForm />
     </div>
   );
