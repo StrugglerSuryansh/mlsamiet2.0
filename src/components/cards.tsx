@@ -36,7 +36,9 @@ function FlipCard({ title, icon, frontContent, backContent }: CardProps) {
           {/* Back of card */}
           <div className="absolute w-full h-full backface-hidden rotate-y-180">
             <div className="bg-blue-600 p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center">
-              <p className="text-white text-center text-lg">{backContent}</p>
+              <p className="text-white text-center text-lg whitespace-pre-line">
+                {backContent}
+              </p>
             </div>
           </div>
         </div>
@@ -51,22 +53,32 @@ function App() {
       title: "Our Aim",
       icon: <Target className="w-full h-full" />,
       frontContent: "Striving for Excellence",
-      backContent:
-        "Spark ideas, light the flame,Learn, inspire, and build your name.Empower, innovate, and aim so high,With MLSA MIET, touch the sky!",
+      backContent: [
+        "Spark ideas, light the flame, Learn, inspire, and build your name.",
+        "Empower, innovate, and aim so high.",
+        "With MLSA MIET, touch the sky!"
+      ].join('\n'),
     },
     {
       title: "Our Mission",
       icon: <Compass className="w-full h-full" />,
       frontContent: "Empowering Success",
-      backContent:
-        "A mission where Innovation and dreams unfold Together we shape a future that's bold,To bridge the gap where ideas flow,Inspiring growth where creativity grows",
+      backContent: [
+        "A mission where Innovation and dreams unfold Together we shape a future that's bold.",
+        "To bridge the gap where ideas flow.",
+        "Inspiring growth where creativity grows."
+      ].join('\n'),
     },
     {
       title: "Our Vision",
       icon: <Eye className="w-full h-full" />,
       frontContent: "Shaping Tomorrow",
-      backContent:
-        "Our vision is to build a vibrant community,Where tech and innovation fuel unity.A space where dreams flourish and futures align,Empowering all to rise, together we shine.",
+      backContent: [
+        "Our vision is to build a vibrant community.",
+        "Where tech and innovation fuel unity.",
+        "A space where dreams flourish and futures align.",
+        "Empowering all to rise, together we shine."
+      ].join('\n'),
     },
   ];
 
