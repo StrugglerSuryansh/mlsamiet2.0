@@ -52,21 +52,21 @@ function App() {
       icon: <Target className="w-full h-full" />,
       frontContent: "Striving for Excellence",
       backContent:
-        "To become the leading innovator in our industry by delivering exceptional value to our customers through cutting-edge solutions.",
+        "Spark ideas, light the flame,Learn, inspire, and build your name.Empower, innovate, and aim so high,With MLSA MIET, touch the sky!",
     },
     {
       title: "Our Mission",
       icon: <Compass className="w-full h-full" />,
       frontContent: "Empowering Success",
       backContent:
-        "To empower businesses and individuals with transformative technologies that drive growth, efficiency, and sustainable success.",
+        "A mission where Innovation and dreams unfold Together we shape a future that's bold,To bridge the gap where ideas flow,Inspiring growth where creativity grows",
     },
     {
       title: "Our Vision",
       icon: <Eye className="w-full h-full" />,
       frontContent: "Shaping Tomorrow",
       backContent:
-        "To create a future where technology seamlessly enhances human potential, fostering a more connected and innovative world.",
+        "Our vision is to build a vibrant community,Where tech and innovation fuel unity.A space where dreams flourish and futures align,Empowering all to rise, together we shine.",
     },
   ];
 

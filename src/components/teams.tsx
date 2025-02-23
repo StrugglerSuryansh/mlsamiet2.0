@@ -178,7 +178,7 @@ const prTeam = [
 
   },
   {
-    name: "prafullit",
+    name: "Prafullit",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/PR team/WhatsApp Image 2024-12-28 at 22.45.34.jpeg",
   },
@@ -224,7 +224,7 @@ const visualTeam = [
       "/MLSA_WEBSITE/volunteer_photo/visual team/Ansh Sharma.jpg",
   },
   {
-    name: "Harshit Ranas",
+    name: "Harshit Rana",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/visual team/c395055e-2096-41b9-992c-762ccf40cf04.jpg",
   },

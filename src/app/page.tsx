@@ -95,7 +95,7 @@ const testimonials = [
   },
   {
     quote:
-      "A storyteller capturing impactful moments, blending competitive programming skills with expertise in C, C++, and DSA.",
+      "A storyteller capturing impactful moments, with competitive programming skills with expertise in C, C++, and DSA.",
     name: "Asit Upadhyay",
     designation: "Media Head",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/ASIT_UPADHYAY.jpg",
