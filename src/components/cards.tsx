@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Target, Compass, Eye } from "lucide-react";
 import { TextAnimate } from "./magicui/text-animate";
 import Link from "next/link";
+import { HiArrowSmallRight } from "react-icons/hi2";
 
 interface CardProps {
   title: string;
@@ -27,7 +28,7 @@ function FlipCard({ title, icon, frontContent, backContent }: CardProps) {
           <div className="absolute w-full h-full backface-hidden">
             <div className="bg-white p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center space-y-4 hover:shadow-xl transition-shadow">
               <div className="text-blue-600 w-16 h-16">{icon}</div>
-              <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
+              <h2 className="text-2xl font-bold text-[#203A61]">{title}</h2>
               <p className="text-gray-600 text-center">{frontContent}</p>
             </div>
           </div>
@@ -50,7 +51,7 @@ function App() {
   const cards = [
     {
       title: "Our Aim",
-      icon: <Target className="w-full h-full" />,
+      icon: <Target className="w-full h-full text-[#034785]" />,
       frontContent: "Striving for Excellence",
       backContent: [
         "Spark ideas, light the flame, Learn, inspire, and build your name.",
@@ -60,7 +61,7 @@ function App() {
     },
     {
       title: "Our Mission",
-      icon: <Compass className="w-full h-full" />,
+      icon: <Compass className="w-full h-full text-[#034785]" />,
       frontContent: "Empowering Success",
       backContent: [
         "A mission where Innovation and dreams unfold Together we shape a future that's bold.",
@@ -70,7 +71,7 @@ function App() {
     },
     {
       title: "Our Vision",
-      icon: <Eye className="w-full h-full" />,
+      icon: <Eye className="w-full h-full text-[#034785]" />,
       frontContent: "Shaping Tomorrow",
       backContent: [
         "Our vision is to build a vibrant community.",
@@ -103,15 +104,13 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="flex justify-end mt-8 mr-8 mb-4">
+        <div className="flex align-center justify-center mt-8 mr-8 mb-4 ">
           {" "}
           {/* Added mb-4 */}
-          <Link
-            href="/knowmore"
-            className="bg-[#203A61] hover:bg-[##607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105"
-          >
-            Know More
-          </Link>
+          <div className="flex items-center gap-2 bg-[#203A61] hover:bg-[##607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105">
+          <Link href="/knowmore">Know More</Link>
+          <HiArrowSmallRight />
+          </div>
         </div>
       </div>
     </>

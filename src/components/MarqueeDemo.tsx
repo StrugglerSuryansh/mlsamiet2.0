@@ -5,38 +5,56 @@ import { TextAnimate } from "./magicui/text-animate";
 const reviews = [
   {
     name: "Dev Chauhan",
-    username: "@dev_chauhan",
+    username: "Advocate Developer, Fetch.AI",
     body: "Speaking at MLSA MIET was an inspiring experience—engaging with a tech-driven community passionate about innovation and problem-solving. The energy and curiosity of the students made every discussion impactful. Excited for future collaborations!",
     img: "https://avatar.vercel.sh/jack",
   },
   {
     name: "Pulkita Marwah ",
-    username: "@pulkita_marwah ",
+    username: "Applied AI Consultant",
     body: "It was an amazing experience",
     img: "https://avatar.vercel.sh/jill",
   },
   {
     name: "Nishant Bhardwaj",
-    username: "@nishant_bhardwaj",
+    username: "Staff Engineer, Nagarro",
     body: "Speaking at MLSA MIET was a fantastic experience! The depth of technical discussions and the students' eagerness to explore cutting-edge technologies were truly impressive. It was great to exchange insights on real-world applications and emerging innovations.",
     img: "https://avatar.vercel.sh/john",
   },
   {
     name: "Sarthak Gupta",
-    username: "@sarthak_gupta",
+    username: "Senior Data Engineer, Eviden",
     body: "Had an amazing time speaking at the career guidance event—thank you for making it so welcoming and well-organized! The students were super engaged, and it felt great to share my journey with them. You all did a fantastic job, and I’m excited to see more events like this in the future. Keep up the awesome work!",
     img: "https://avatar.vercel.sh/jane",
   },
   {
     name: "Ayon roy",
-    username: "@ayon_roy",
+    username: "Data Scientist, NielsenIQ",
     body: "It was a pleasure to speak at an event organized by MLSA MIET and it was such a great feeling to be amongst the community members for whom such events are a great platform to learn and explore.The pool of speakers at the event was so coveted that it was an awesome learning experience for me too. In short, it was a great experience for me to join the event and i look forward to more such opportunities.",
     img: "https://avatar.vercel.sh/jenny",
   },
   {
+    name: "Tushar Parashar",
+    username: "Core Team '23, MLSA MIET",
+    body: "Being a part of MLSA MIET was an incredible experience that shaped both my technical and leadership skills. The community fostered a collaborative environment where innovation thrived, and we continuously pushed the boundaries of what we could achieve together.",
+    img: "https://avatar.vercel.sh/jenny",
+  },
+  {
     name: "Rohit Yadav",
-    username: "@rohit_yadav",
+    username: "Microsoft MVP",
+    body: "MLSA-MIET has become another family where people learn from each other and excel together . Whether it's about showing teamwork or leading a particular domain. At the end hard work of each member pays off . It was a great time leading the design team and bringing out the fruitful and innovative designs from them.",
+    img: "https://avatar.vercel.sh/james",
+  },
+  {
+    name: "Ashwarya Negi",
+    username: "Ex-Core Team Member, MLSA MIET",
     body: "Had an amazing experience speaking at MLSA MIET! The passion and curiosity of the students created an engaging atmosphere, making every discussion insightful. It was great to connect with a community so dedicated to innovation and problem-solving. Looking forward to more such collaborations!",
+    img: "https://avatar.vercel.sh/james",
+  },
+  {
+    name: "Sakshi",
+    username: "Core Team '22, MLSA MIET",
+    body: "Designing my way through life✨—Hey fellows, I'm SAKSHI! Being a part of MLSA community as a Graphic Design Head has been an incredible blend of creativity, teamwork, and growth. It gave me a wide platform to learn, experiment and collaborate with like-minded individuals who are equally passionate about design and technology.",
     img: "https://avatar.vercel.sh/james",
   },
 ];

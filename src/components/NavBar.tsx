@@ -46,7 +46,7 @@ const Navbar = () => {
               />
             </Link>
             <span className=" text-[#203A61]  text-[20px] font-semibold  lg:text-[24px]">
-              MLSA <span className="hidden md:inline-block">MIET</span>
+              MLSA <span className="hidden md:inline-block text-[#034785]">MIET</span>
             </span>
           </div>
 
@@ -57,12 +57,12 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-4 xl:gap-12">
+            <NavbarItem href="/">Home</NavbarItem>
+            <NavbarItem href="/knowmore">About Us</NavbarItem>
             <NavbarItem href="/events">Events</NavbarItem>
             <NavbarItem href="/gallery">Gallery</NavbarItem>
             <NavbarItem href="/members">Members</NavbarItem>
-            <NavbarItem href="/#contact">
-              Join Us
-            </NavbarItem>
+            <NavbarItem href="/#contact">Join Us</NavbarItem>
           </div>
         </div>
       </nav >

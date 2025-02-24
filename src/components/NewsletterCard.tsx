@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Newspaper } from "lucide-react";
 import { TextAnimate } from "./magicui/text-animate";
+import { HiArrowSmallRight } from "react-icons/hi2";
 
 interface NewsletterCardProps {
   title: string;
@@ -15,13 +16,15 @@ function SingleCard({ title, description, link, icon }: NewsletterCardProps) {
   return (
     <div className="w-80 h-96">
       <div className="bg-white p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center space-y-4 hover:shadow-xl transition-shadow">
-        <div className="text-[#203A61] w-16 h-16">{icon}</div>
-        <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
+        <div className="text-[#034785] w-16 h-16">{icon}</div>
+        <h2 className="text-2xl font-bold text-[#203A61]">{title}</h2>
         <p className="text-gray-600 text-center">{description}</p>
         <Link href={link}>
-          <button className="px-6 py-3 bg-[#203A61] text-white rounded-xl hover:bg-[#1f3e6d] transition-colors duration-200">
-            KNOW MORE
-          </button>
+        <div className="flex items-center gap-2 bg-[#203A61] hover:bg-[##607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105">
+         <button>Know More </button>
+         <HiArrowSmallRight />
+        </div>
+          
         </Link>
       </div>
     </div>
