@@ -35,19 +35,19 @@ export function NewsletterCards() {
   const newsletters = [
     {
       title: "January '25",
-      description: "Stay updated with our monthly progress and achievements",
+      description: "Explore key updates and exciting accomplishments from the start of 2025.",
       link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/mlsa-miet-chronicles-a-thrilling-start-to-2025-with-mlsa",
       icon: <Newspaper className="w-full h-full" />,
     },
     {
       title: "December '24",
-      description: "Deep dive into technical content and learning resources",
+      description: "Discover insights from our December content and technical achievements.",
       link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/from-us-to-you-a-heartwarming-look-back-at-2024",
       icon: <Newspaper className="w-full h-full" />,
     },
     {
       title: "November '24 ",
-      description: "Catch up on our latest events and community activities",
+      description: "Check out the events and activities that defined November.",
       link: "https://www.commudle.com/communities/microsoft-learn-student-ambassadors-meerut-institute-of-engineering-and-technology/newsletters/3rd-edition-of-mlsa-miet",
       icon: <Newspaper className="w-full h-full" />,
     },

@@ -11,7 +11,7 @@ interface EventItem {
 
 export function EventLayout({ items }: { items: EventItem[] }) {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16 space-y-24">
+    <div className="h-full max-w-7xl mx-auto px-4 py-16 space-y-24">
       {items.map((item, index) => (
         <div
           key={index}
@@ -29,17 +29,17 @@ export function EventLayout({ items }: { items: EventItem[] }) {
           </div>
 
           <div className="w-full md:w-1/2 flex flex-col items-center space-y-6">
-            <h2 className="text-4xl font-bold text-center w-full text-[#203A61]">
+            <h2 className="text-4xl text-center font-bold w-full text-[#203A61] secondary">
               {item.title}
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed text-justify">
+            <p className="text-lg text-gray-700 leading-relaxed text-justify secondary">
               {item.body}
             </p>
             <Link
               href={`/gallery#${item.sectionId}`}
               className="flex justify-center"
             >
-              <button className="px-6 py-3 bg-[#203A61] text-white rounded-xl hover:shadow-slate-900 transition duration-200">
+              <button className="bg-[#203A61] hover:bg-[#607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105 secondary">
                 {item.button}
               </button>
             </Link>

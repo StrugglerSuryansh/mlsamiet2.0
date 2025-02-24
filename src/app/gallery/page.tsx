@@ -13,8 +13,8 @@ const avasarImagesArray = [
   "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/IMG_2313.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/IMG_2314.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/IMG_2321.jpg",
-  "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/IMG_2323.jpg",
-  "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/IMG_2324.jpg",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/IMG_2323.jpg",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/IMG_2324.jpg",
   // "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/PXL_20241014_090652579.jpg",
   // "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/PXL_20241014_093825338.jpg",
   // "/MLSA_WEBSITE/EVENT_PHOTO/AVSAR/PXL_20241014_093848134.jpg",
@@ -58,7 +58,7 @@ const introToMLSAArray = [
   "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_0447.JPG",
   "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_0455_exported_1566.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_0468.JPG",
-  "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_5868.JPG",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_5868.JPG",
 ];
 
 const prayasArray = [
@@ -69,8 +69,8 @@ const prayasArray = [
   "/MLSA_WEBSITE/EVENT_PHOTO/prayas/20240529_121006PMByGPSMapCamera.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3021.jpg",
   "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3022.jpg",
-  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3120.jpg",
-  "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3122.jpg",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3120.jpg",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3122.jpg",
   // "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3139.jpg",
   // "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3152.jpg",
   // "/MLSA_WEBSITE/EVENT_PHOTO/prayas/IMG_3157.jpg",
@@ -90,11 +90,11 @@ const samaarambhArray = [
   "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0827.JPG",
   "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0880.JPG",
   "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0898.jpg",
-  "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0937.JPG",
-  "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0940.JPG",
-  "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0945.JPG",
-  "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0947.JPG",
-  "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0966.JPG",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0937.JPG",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0940.JPG",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0945.JPG",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0947.JPG",
+  // "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0966.JPG",
   // "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_0978.JPG",
   // "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_1001.JPG",
   // "/MLSA_WEBSITE/EVENT_PHOTO/SAMAARAMBH 2.0/IMG_1034.JPG",
@@ -113,10 +113,10 @@ const Gallery = () => {
 
 
       <section id="samaarambh">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center text-[#203A61]">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center text-[#203A61] secondary">
           <TextAnimate>
 
-            SAMAARAMBH
+            SAMAARAMBH 2.O
           </TextAnimate>
         </h1>
         <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
@@ -134,9 +134,9 @@ const Gallery = () => {
       </section>
 
       <section id="intromlsa">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center  text-[#203A61]">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center  text-[#203A61] secondary">
           <TextAnimate>
-            INTRO TO MLSA
+            EXCLUSIVE REEL SHOOT
 
           </TextAnimate>
         </h1>
@@ -155,11 +155,8 @@ const Gallery = () => {
       </section>
 
       <section id="funmeet">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center  text-[#203A61]">
-          <TextAnimate>
-
-            FUN MEET
-          </TextAnimate>
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold my-8 text-center  text-[#203A61] secondary">
+          <TextAnimate>THE TEAM MEET</TextAnimate>
         </h1>
         <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 sm:gap-4 [&>div:not(:first-child)]:mt-3 sm:[&>div:not(:first-child)]:mt-4">
           {funMeetArray.map((image, index) => (

@@ -33,7 +33,7 @@ const graphicsTeam = [
 
   },
   {
-    name: "Arya",
+    name: "Arya Kant",
     imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/arya.jpg",
     imagePosition: "top" as const,
   },
@@ -44,6 +44,7 @@ const graphicsTeam = [
   {
     name: "Bhavya Gupta",
     imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/Bhavya Gupta.jpg",
+    imagePosition: "top" as const,
 
   },
   {
@@ -69,13 +70,13 @@ const contentTeam = [
     imageUrl:
       "/MLSA_WEBSITE/Domain_Heads_photo/tanushka.jpg",
   },
+  // {
+  //   name: "Geetanshi Goel",
+  //   imageUrl:
+  //     "/MLSA_WEBSITE/volunteer_photo/Content team/Geetanshigoel.jpg",
+  // },
   {
-    name: "Geetanshi Goel",
-    imageUrl:
-      "/MLSA_WEBSITE/volunteer_photo/Content team/Geetanshigoel.jpg",
-  },
-  {
-    name: "Aastha",
+    name: "Aastha Panwar",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/Content team/IMG_20250211_172808.jpg",
     imagePosition: "top" as const,
@@ -105,7 +106,7 @@ const eventTeam = [
       "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20241208_144759.jpg",
   },
   {
-    name: "Avni Mittal",
+    name: "Avni Gupta",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/event team/IMG_20241228_155612.jpg",
   },
@@ -128,11 +129,11 @@ const eventTeam = [
     imagePosition: "top" as const,
 
   },
-  {
-    name: "Vaibhav",
-    imageUrl:
-      "/MLSA_WEBSITE/volunteer_photo/event team/Screenshot_20241016_201031_Chrome.jpg",
-  },
+  // {
+  //   name: "Vaibhav Gupta",
+  //   imageUrl:
+  //     "/MLSA_WEBSITE/volunteer_photo/event team/Screenshot_20241016_201031_Chrome.jpg",
+  // },
   {
     name: "Tushar Tyagi",
     imageUrl:
@@ -142,17 +143,17 @@ const eventTeam = [
 
 const prTeam = [
   {
-    name: "Pari Aggarwal",
+    name: "Pari Agarwal",
     imageUrl:
       "/MLSA_WEBSITE/Domain_Heads_photo/pari.png",
   },
-  {
-    name: "Anushka Singhal",
-    imageUrl:
-      "/MLSA_WEBSITE/volunteer_photo/PR team/Anushka Singhal.jpg",
-    imagePosition: "top" as const,
+  // {
+  //   name: "Anushka Singhal",
+  //   imageUrl:
+  //     "/MLSA_WEBSITE/volunteer_photo/PR team/Anushka Singhal.jpg",
+  //   imagePosition: "top" as const,
 
-  },
+  // },
   {
     name: "Kunj Agarwal",
     imageUrl:
@@ -179,7 +180,7 @@ const prTeam = [
 
   },
   {
-    name: "Prafullit",
+    name: "Prafullit Bhattacharya",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/PR team/WhatsApp Image 2024-12-28 at 22.45.34.jpeg",
   },
@@ -197,17 +198,17 @@ const socialTeam = [
       "/MLSA_WEBSITE/volunteer_photo/social team/yashgoyal.png",
   },
   {
-    name: "Navya",
+    name: "Navya Yadav",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/social team/IMG-20241025-WA0023.jpg",
   },
   {
-    name: "Tanishka",
+    name: "Tanishka Agarwal",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/social team/Tanishkaagg.jpg",
   },
   {
-    name: "Kushagra",
+    name: "Kushagra Sharma",
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/social team/WhatsApp Image 2025-02-09 at 11.20.04 PM.jpeg",
   },
@@ -239,42 +240,24 @@ const visualTeam = [
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/visual team/Sahil Gulati.jpg",
   },
-  {
-    name: "Sumit Aggarwal",
-    imageUrl:
-      "/MLSA_WEBSITE/volunteer_photo/visual team/Sumit_Aggarwal.jpg",
-  },
+  // {
+  //   name: "Sumit Aggarwal",
+  //   imageUrl:
+  //     "/MLSA_WEBSITE/volunteer_photo/visual team/Sumit_Aggarwal.jpg",
+  // },
 ];
 
 export function Teams() {
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-6xl font-bold text-center mb-16 text-[#203A61] ">
+      <h1 className="text-5xl text-center mb-16 text-[#203A61] primary">
         <TextAnimate>
-          OUR TEAMS
+          THE MINDS BEHIND THE MISSION
         </TextAnimate>
       </h1>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] text-center">Technical Team</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {technicalTeam.map((member, index) => (
-            <TeamMember key={member.name} {...member} isFirst={index === 0} />
-          ))}
-        </div>
-      </section>
-
-      <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] text-center ">Graphics Team</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {graphicsTeam.map((member, index) => (
-            <TeamMember key={member.name} {...member} isFirst={index === 0} />
-          ))}
-        </div>
-      </section>
-
-      <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] text-center">Content Team</h2>
+        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Content Creation</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {contentTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -283,25 +266,16 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] text-center">Event Team</h2>
+        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary ">Creative Design</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {eventTeam.map((member, index) => (
+          {graphicsTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
           ))}
         </div>
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] text-center">PR Team</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {prTeam.map((member, index) => (
-            <TeamMember key={member.name} {...member} isFirst={index === 0} />
-          ))}
-        </div>
-      </section>
-
-      <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] text-center">Social Media Team</h2>
+        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Digital Marketing</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {socialTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -310,7 +284,34 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] text-center">Visuals Team</h2>
+        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Event Operations</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {eventTeam.map((member, index) => (
+            <TeamMember key={member.name} {...member} isFirst={index === 0} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Public Relations & Outreach</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {prTeam.map((member, index) => (
+            <TeamMember key={member.name} {...member} isFirst={index === 0} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Technical Team</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {technicalTeam.map((member, index) => (
+            <TeamMember key={member.name} {...member} isFirst={index === 0} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-16">
+        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Visuals Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {visualTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />

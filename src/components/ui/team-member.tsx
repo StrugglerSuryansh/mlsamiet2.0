@@ -32,11 +32,11 @@ export function TeamMember({
           loading="lazy"
         />
       </div>
-      <h3 className="text-lg font-semibold">{name}</h3>
+      <h3 className="text-lg font-semibold secondary">{name}</h3>
       {role && <p className="text-sm text-gray-600">{role}</p>}
       {isFirst && (
-        <span className="mt-1 inline-block rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800">
-          Team Lead
+        <span className="mt-1 inline-block rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800 primary">
+          Team Head
         </span>
       )}
     </div>

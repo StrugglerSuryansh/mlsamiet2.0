@@ -18,10 +18,6 @@ export default function KnowMore() {
       objectPosition: "center",
     },
     {
-      src: "/MLSA_WEBSITE/Sponsers_photos/WhatsApp Image 2025-02-23 at 17.17.30.jpeg",
-      objectPosition: "top",
-    },
-    {
       src: "/MLSA_WEBSITE/Sponsers_photos/WhatsApp Image 2025-02-23 at 17.17.31 (1).jpeg",
       objectPosition: "center",
     },
@@ -56,9 +52,9 @@ export default function KnowMore() {
   ];
 
   const stats = [
+    { value: "4000+", label: "Community Members" },
     { value: "1000+", label: "Event Registrations" },
     { value: "30+", label: "Total Events" },
-    { value: "5+", label: "Annual Events" },
     { value: "14+", label: "Industry Partners" },
   ];
 
@@ -66,7 +62,7 @@ export default function KnowMore() {
     "Reskill Ecosystem",
     "Bobble Fanstore",
     "Microsystem Azure",
-    "Commudle",
+    "Squareboat",
     "Azure Developer Community",
     "Devfolio",
     "Polygon",
@@ -83,7 +79,7 @@ export default function KnowMore() {
   const partners = [
     "Microsoft",
     "Fetch.ai",
-    "Squareboat",
+    "Commudle",
     "Startup4Nation",
     "ADS Labs",
     "CSI-SRM"
@@ -97,14 +93,14 @@ export default function KnowMore() {
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-4xl md:text-5xl font-bold text-center text-[#203A61] mb-16"
+            className="text-4xl md:text-5xl text-center text-[#203A61] mb-16 primary"
           >
             UNCOVER OUR JOURNEY
           </TextAnimate>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-2xl text-gray-700 leading-relaxed text-justify">
+              <p className="text-2xl text-gray-700 leading-relaxed text-justify secondary">
                 MLSA MIET is a vibrant community dedicated to fostering tech
                 enthusiasm, innovation, and collaboration. Since its inception,
                 the community has actively engaged students in cutting-edge
@@ -123,7 +119,7 @@ export default function KnowMore() {
       {/* Stats Section */}
       <section className="py-16 px-8 bg-blue-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#203A61]">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#203A61] primary">
             <TextAnimate>
 
               Our Legacy
@@ -136,10 +132,10 @@ export default function KnowMore() {
                 className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-4"
               >
 
-                <div className="text-3xl font-bold text-center text-gray-900 mb-2">
+                <div className="text-3xl font-bold text-center text-gray-900 mb-2 secondary">
                   {stat.value}
                 </div>
-                <div className="text-gray-600 text-center">{stat.label}</div>
+                <div className="text-gray-600 text-center secondary">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -150,13 +146,13 @@ export default function KnowMore() {
       <section className="py-16 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h2 className="text-3xl font-bold mb-8 text-center text-[#203A61]">
+            <h2 className="text-3xl font-bold mb-8 text-center text-[#203A61] primary">
               <TextAnimate>
                 Our Journey & Impact
 
               </TextAnimate>
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed text-center">
+            <p className="text-lg text-gray-700 leading-relaxed text-center secondary">
               With a history of impactful events, industrial visits, and
               tech-driven initiatives, MLSA MIET has consistently grown,
               attracting thousands of participants across various technical
@@ -171,7 +167,7 @@ export default function KnowMore() {
       {/* Sponsors Section */}
       <section className="py-16 px-8 bg-blue-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#203A61]">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#203A61] primary">
             <TextAnimate>
 
               Our Trusted Sponsors
@@ -184,13 +180,13 @@ export default function KnowMore() {
                 key={index}
                 className="bg-white  p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
-                <p className="text-center text-gray-800 font-medium">
+                <p className="text-center text-gray-800 font-medium secondary">
                   {sponsor}
                 </p>
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-700 mt-8">
+          <p className="text-center text-gray-700 mt-8 secondary">
             Supported by 14+ leading sponsors, backed by global and
             community-driven brands.
           </p>
@@ -204,7 +200,7 @@ export default function KnowMore() {
       <section className="py-16 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h2 className="text-3xl font-bold text-center mb-8 text-[#203A61]">
+            <h2 className="text-3xl font-bold text-center mb-12 text-[#203A61] primary">
               <TextAnimate>
                 Our Collaborations
               </TextAnimate>
@@ -216,7 +212,7 @@ export default function KnowMore() {
                   key={index}
                   className="bg-white  p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <p className="text-center text-gray-800 font-medium">
+                  <p className="text-center text-gray-800 font-medium secondary">
                     {partners}
                   </p>
                 </div>
@@ -230,7 +226,7 @@ export default function KnowMore() {
       {/* Footer Quote */}
       <section className="py-16 px-8 bg-[#203A61] text-white ">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xl font-medium italic">
+          <p className="text-xl font-medium italic primary">
             "At MLSA MIET, we continue to empower students, create
             opportunities, and build a thriving tech ecosystem—one event at a
             time! 🚀💙"
