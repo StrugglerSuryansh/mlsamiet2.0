@@ -28,7 +28,7 @@ export function AnimatedTestimonialsDemo({
   title,
   autoChangeInterval = 2000,
   isAutoChange = false,
-  className = "flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-7",
+  className = "flex flex-col items-center  justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-7",
 }: AnimatedTestimonialsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -55,7 +55,7 @@ export function AnimatedTestimonialsDemo({
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl primary"
+            className="text-3xl  sm:text-4xl md:text-5xl lg:text-6xl primary"
           >
             {title}
           </TextAnimate>

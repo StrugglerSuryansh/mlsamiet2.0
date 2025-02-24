@@ -3,6 +3,7 @@ import ImageCarousel from "@/components/ImageCarousel";
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { Users2, Calendar, Trophy, Building2 } from "lucide-react";
 
+
 export default function KnowMore() {
   const images = [
     {

@@ -82,7 +82,7 @@ const ReviewCard = ({
         "mx-4" // added margin between cards
       )}
     >
-      <div className="flex flex-row items-center gap-3 mb-4">
+      <div className="flex flex-row items-center gap-3 mb-4 ">
         {" "}
         {/* increased bottom margin */}
         {/* <img className="rounded-full h-12 w-12 object-cover" alt="" src={img} /> */}

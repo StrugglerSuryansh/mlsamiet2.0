@@ -5,6 +5,7 @@ import { MarqueeDemo } from "@/components/MarqueeDemo";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonials";
 import Cards from "@/components/cards";
 import { NewsletterCards } from "@/components/NewsletterCard";
+import SponsorsSection from "@/components/sponsers";
 
 const testimonials = [
   {
@@ -116,6 +117,7 @@ export default function Home() {
         testimonials={testimonials}
         title="MEET THE LEADERS"
       />
+      <SponsorsSection/>
     </div>
   );
 }

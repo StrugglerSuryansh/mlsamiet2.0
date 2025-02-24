@@ -251,7 +251,7 @@ const visualTeam = [
 
 export function Teams() {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-20 py-16">
       <h1 className="text-5xl text-center mb-16 text-[#203A61] primary">
         <TextAnimate>
           THE MINDS BEHIND THE MISSION
