@@ -88,13 +88,17 @@ export default function ContactForm() {
 
       <>
 
-        <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4">
+        <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-4">
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl primary"
           >
+<<<<<<< Updated upstream
             JOIN US
+=======
+            CONTACT US
+>>>>>>> Stashed changes
           </TextAnimate>
         </div>
 
@@ -122,7 +126,7 @@ export default function ContactForm() {
                 <div className="space-y-2">
                   <label
                     htmlFor="name"
-                    className="text-base font-semibold text-gray-700"
+                    className="text-base font-semibold text-gray-700 primary"
                   >
                     Name
                   </label>
@@ -132,7 +136,7 @@ export default function ContactForm() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Enter your name"
-                    className="rounded-xl border-gray-300 bg-white"
+                    className="rounded-xl border-gray-300 bg-white secondary"
                     required
                   />
                 </div>
@@ -141,7 +145,7 @@ export default function ContactForm() {
                 <div className="space-y-2">
                   <label
                     htmlFor="phone"
-                    className="text-base font-semibold text-gray-700"
+                    className="text-base font-semibold text-gray-700 primary"
                   >
                     Phone No.
                   </label>
@@ -151,7 +155,7 @@ export default function ContactForm() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Enter your phone number"
-                    className="rounded-xl border-gray-300 bg-white"
+                    className="rounded-xl border-gray-300 bg-white secondary"
                     required
                   />
                 </div>
@@ -160,7 +164,7 @@ export default function ContactForm() {
                 <div className="space-y-2">
                   <label
                     htmlFor="email"
-                    className="text-base font-semibold text-gray-700"
+                    className="text-base font-semibold text-gray-700 primary"
                   >
                     Email
                   </label>
@@ -171,7 +175,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     type="email"
                     placeholder="Enter your email"
-                    className="rounded-xl border-gray-300 bg-white"
+                    className="rounded-xl border-gray-300 bg-white secondary"
                     required
                   />
                 </div>
@@ -180,7 +184,7 @@ export default function ContactForm() {
                 <div className="space-y-2">
                   <label
                     htmlFor="message"
-                    className="text-base font-semibold text-gray-700"
+                    className="text-base font-semibold text-gray-700 primary"
                   >
                     Message
                   </label>
@@ -190,7 +194,7 @@ export default function ContactForm() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Enter your message"
-                    className="min-h-[120px] resize-none rounded-xl border-gray-300 bg-white"
+                    className="min-h-[120px] resize-none rounded-xl border-gray-300 bg-white secondary"
                   />
                 </div>
 
@@ -198,7 +202,7 @@ export default function ContactForm() {
                 <div className="pt-4">
                   <Button
                     type="submit"
-                    className="rounded-xl bg-black px-8 py-3 text-lg font-semibold text-white hover:bg-black/90"
+                    className="bg-[#203A61] hover:bg-[##607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105 secondary"
                   >
                     SUBMIT
                   </Button>

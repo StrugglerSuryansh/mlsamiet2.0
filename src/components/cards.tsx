@@ -28,15 +28,15 @@ function FlipCard({ title, icon, frontContent, backContent }: CardProps) {
           <div className="absolute w-full h-full backface-hidden">
             <div className="bg-white p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center space-y-4 hover:shadow-xl transition-shadow">
               <div className="text-blue-600 w-16 h-16">{icon}</div>
-              <h2 className="text-2xl font-bold text-[#203A61]">{title}</h2>
-              <p className="text-gray-600 text-center">{frontContent}</p>
+              <h2 className="text-2xl font-bold primary text-black">{title}</h2>
+              <p className="text-black text-center secondary">{frontContent}</p>
             </div>
           </div>
 
           {/* Back of card */}
           <div className="absolute w-full h-full backface-hidden rotate-y-180">
             <div className="bg-blue-400 p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center">
-              <p className="text-white text-center text-lg ">
+              <p className="text-white text-center text-lg secondary">
                 {backContent}
               </p>
             </div>
@@ -84,11 +84,15 @@ function App() {
 
   return (
     <>
+<<<<<<< Updated upstream
       <div className="flex p-10 flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4">
+=======
+      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-4">
+>>>>>>> Stashed changes
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl primary"
         >
           ABOUT US
         </TextAnimate>
@@ -107,7 +111,7 @@ function App() {
         <div className="flex align-center justify-center mt-8 mr-8 mb-4 ">
           {" "}
           {/* Added mb-4 */}
-          <div className="flex items-center gap-2 bg-[#203A61] hover:bg-[##607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105">
+          <div className="flex items-center gap-2 bg-[#203A61] hover:bg-[#607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105 secondary">
           <Link href="/knowmore">Know More</Link>
           <HiArrowSmallRight />
           </div>

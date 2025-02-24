@@ -87,13 +87,13 @@ const ReviewCard = ({
         {/* increased bottom margin */}
         {/* <img className="rounded-full h-12 w-12 object-cover" alt="" src={img} /> */}
         <div className="flex flex-col">
-          <figcaption className="text-base font-bold dark:text-white">
+          <figcaption className="text-base font-bold primary dark:text-white">
             {name}
           </figcaption>
-          <p className="text-sm font-medium dark:text-white/40">{username}</p>
+          <p className="text-sm font-medium primary dark:text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="text-sm leading-relaxed whitespace-normal break-words">
+      <blockquote className="text-sm leading-relaxed whitespace-normal break-words secondary text-justify">
         {body}
       </blockquote>
     </figure>
@@ -103,11 +103,15 @@ const ReviewCard = ({
 export function MarqueeDemo() {
   return (
     <>
+<<<<<<< Updated upstream
       <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] p-12 dark:text-cyan-400 text-center font-bold font-mono m-4 pt-28">
+=======
+      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-7">
+>>>>>>> Stashed changes
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl primary"
         >
           VOICES OF EXPERIENCE
         </TextAnimate>

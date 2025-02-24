@@ -39,7 +39,7 @@ const NavbarItem = ({
     >
       <div className={`flex flex-col items-center ${mobileView ? "py-2" : ""}`}>
         <span
-          className={`text-md font-medium transition-colors
+          className={`text-md font-medium transition-colors secondary 
           ${mobileView ? "text-white text-lg" : "text-black hover:text-blue-600"}
           ${className}`}
         >

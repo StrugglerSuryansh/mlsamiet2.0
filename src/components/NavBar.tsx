@@ -45,7 +45,7 @@ const Navbar = () => {
                 className="w-auto h-[35px] md:h-[40px] lg:h-[80px]"
               />
             </Link>
-            <span className=" text-[#203A61]  text-[20px] font-semibold  lg:text-[24px]">
+            <span className=" text-[#203A61]  text-[20px] font-semibold primary  lg:text-[24px]">
               MLSA <span className="hidden md:inline-block text-[#034785]">MIET</span>
             </span>
           </div>
