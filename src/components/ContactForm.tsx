@@ -95,7 +95,11 @@ export default function ContactForm() {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl primary"
           >
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             JOIN US
+=======
+            CONTACT US
+>>>>>>> Stashed changes
 =======
             CONTACT US
 >>>>>>> Stashed changes

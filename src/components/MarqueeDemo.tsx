@@ -104,7 +104,11 @@ export function MarqueeDemo() {
   return (
     <>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] p-12 dark:text-cyan-400 text-center font-bold font-mono m-4 pt-28">
+=======
+      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-7">
+>>>>>>> Stashed changes
 =======
       <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-7">
 >>>>>>> Stashed changes
