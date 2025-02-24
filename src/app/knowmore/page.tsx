@@ -187,7 +187,7 @@ export default function KnowMore() {
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-700 mt-8 secondary">
+          <p className="text-center text-gray-700 mt-8 secondary text-secondary">
             Supported by 14+ leading sponsors, backed by global and
             community-driven brands.
           </p>
