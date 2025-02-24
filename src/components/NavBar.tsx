@@ -62,7 +62,7 @@ const Navbar = () => {
             <NavbarItem href="/events">Events</NavbarItem>
             <NavbarItem href="/gallery">Gallery</NavbarItem>
             <NavbarItem href="/members">Members</NavbarItem>
-            <NavbarItem href="/#contact">Join Us</NavbarItem>
+            <NavbarItem href="/contactus">Join Us</NavbarItem>
           </div>
         </div>
       </nav >

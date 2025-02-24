@@ -3,9 +3,6 @@ import { SpotlightNewDemo } from "@/components/HeroSection";
 import { MagicCardDemo } from "@/components/MagicCardDemo";
 import { MarqueeDemo } from "@/components/MarqueeDemo";
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonials";
-import ContactForm from "@/components/ContactForm";
-import CanvasRevealEffectDemo from "@/components/CanvasRevealEffectDemo";
-import MembersPage from "./members/page";
 import Cards from "@/components/cards";
 import { NewsletterCards } from "@/components/NewsletterCard";
 
@@ -119,7 +116,6 @@ export default function Home() {
         testimonials={testimonials}
         title="MEET THE LEADERS"
       />
-      <ContactForm />
     </div>
   );
 }

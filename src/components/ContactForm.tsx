@@ -94,7 +94,7 @@ export default function ContactForm() {
             by="character"
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
           >
-            Contact us
+            JOIN US
           </TextAnimate>
         </div>
 
