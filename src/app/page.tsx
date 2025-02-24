@@ -82,9 +82,9 @@ const testimonials = [
   {
     quote:
       "A skilled communicator and multitasker, leading PR and outreach while bringing a developer’s touch to collaborations.",
-    name: "Pari Aggarwal",
+    name: "Pari Agarwal",
     designation: "Outreach Head",
-    src: "/MLSA_WEBSITE/Domain_Heads_photo/pari.png",
+    src: "/MLSA_WEBSITE/Domain_Heads_photo/Pari.jpg",
     social: {
       commudle: "https://www.commudle.com/users/Pariagarwal",
       linkedin: "https://www.linkedin.com/in/pari-agarwal-3153bb290/",
