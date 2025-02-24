@@ -24,7 +24,8 @@ const technicalTeam = [
 const graphicsTeam = [
   {
     name: "Anmol Kumar",
-    imageUrl: "/MLSA_WEBSITE/Domain_Heads_photo/anmol.jpg",
+    imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/anmolkumar.jpg",
+    
   },
   {
     name: "Aman Sharma",
@@ -70,11 +71,12 @@ const contentTeam = [
     imageUrl:
       "/MLSA_WEBSITE/Domain_Heads_photo/tanushka.jpg",
   },
-  // {
-  //   name: "Geetanshi Goel",
-  //   imageUrl:
-  //     "/MLSA_WEBSITE/volunteer_photo/Content team/Geetanshigoel.jpg",
-  // },
+  {
+    name: "Geetanshi Goel",
+    imageUrl:
+      "MLSA_WEBSITE/volunteer_photo/Content team/IMG-20250224-WA0022[1].jpg",
+    imagePosition: "top" as const
+  },
   {
     name: "Aastha Panwar",
     imageUrl:
@@ -129,11 +131,11 @@ const eventTeam = [
     imagePosition: "top" as const,
 
   },
-  // {
-  //   name: "Vaibhav Gupta",
-  //   imageUrl:
-  //     "/MLSA_WEBSITE/volunteer_photo/event team/Screenshot_20241016_201031_Chrome.jpg",
-  // },
+  {
+    name: "Vaibhav Gupta",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/event team/IMG-20250224-WA0021[1].jpg",
+  },
   {
     name: "Tushar Tyagi",
     imageUrl:
@@ -240,11 +242,11 @@ const visualTeam = [
     imageUrl:
       "/MLSA_WEBSITE/volunteer_photo/visual team/Sahil Gulati.jpg",
   },
-  // {
-  //   name: "Sumit Aggarwal",
-  //   imageUrl:
-  //     "/MLSA_WEBSITE/volunteer_photo/visual team/Sumit_Aggarwal.jpg",
-  // },
+  {
+    name: "Sumit Aggarwal",
+    imageUrl:
+      "/MLSA_WEBSITE/volunteer_photo/visual team/image.png",
+  },
 ];
 
 export function Teams() {
