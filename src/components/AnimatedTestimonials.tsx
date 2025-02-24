@@ -28,15 +28,7 @@ export function AnimatedTestimonialsDemo({
   title,
   autoChangeInterval = 2000,
   isAutoChange = false,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  className = "flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4 pt-24",
-=======
-  className = "flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-7",
->>>>>>> Stashed changes
-=======
-  className = "flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-7",
->>>>>>> Stashed changes
+  className = "flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4",
 }: AnimatedTestimonialsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
