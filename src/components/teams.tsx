@@ -33,7 +33,7 @@ const graphicsTeam = [
 
   },
   {
-    name: "Arya Kant",
+    name: "Arya Rajvanshi",
     imageUrl: "/MLSA_WEBSITE/volunteer_photo/Graphic team/arya.jpg",
     imagePosition: "top" as const,
   },
