@@ -56,10 +56,10 @@ export default function KnowMore() {
   ];
 
   const stats = [
-    { icon: <Users2 />, value: "1000+", label: "Event Registrations" },
-    { icon: <Building2 />, value: "180+", label: "Industrial Visit Attendees" },
-    { icon: <Calendar />, value: "5+", label: "Annual Events" },
-    { icon: <Trophy />, value: "14+", label: "Industry Partners" },
+    { value: "1000+", label: "Event Registrations" },
+    { value: "30+", label: "Total Events" },
+    { value: "5+", label: "Annual Events" },
+    { value: "14+", label: "Industry Partners" },
   ];
 
   const sponsors = [
@@ -79,6 +79,16 @@ export default function KnowMore() {
     "Dcornerr",
   ];
 
+
+  const partners = [
+    "Microsoft",
+    "Fetch.ai",
+    "Squareboat",
+    "Startup4Nation",
+    "ADS Labs",
+    "CSI-SRM"
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section with About Us */}
@@ -87,14 +97,14 @@ export default function KnowMore() {
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-4xl md:text-5xl font-bold text-center text-cyan-400 mb-16"
+            className="text-4xl md:text-5xl font-bold text-center text-[#203A61] mb-16"
           >
-            Know More About MLSA MIET
+            UNCOVER OUR JOURNEY
           </TextAnimate>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-2xl text-gray-700 leading-relaxed">
+              <p className="text-2xl text-gray-700 leading-relaxed text-justify">
                 MLSA MIET is a vibrant community dedicated to fostering tech
                 enthusiasm, innovation, and collaboration. Since its inception,
                 the community has actively engaged students in cutting-edge
@@ -113,18 +123,19 @@ export default function KnowMore() {
       {/* Stats Section */}
       <section className="py-16 px-8 bg-blue-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Our Legacy in Numbers
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#203A61]">
+            <TextAnimate>
+
+              Our Legacy
+            </TextAnimate>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-4"
               >
-                <div className="text-blue-600 w-12 h-12 mx-auto mb-4">
-                  {stat.icon}
-                </div>
+
                 <div className="text-3xl font-bold text-center text-gray-900 mb-2">
                   {stat.value}
                 </div>
@@ -139,10 +150,13 @@ export default function KnowMore() {
       <section className="py-16 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h2 className="text-3xl font-bold mb-8 text-center">
-              Our Journey & Impact
+            <h2 className="text-3xl font-bold mb-8 text-center text-[#203A61]">
+              <TextAnimate>
+                Our Journey & Impact
+
+              </TextAnimate>
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed text-center">
               With a history of impactful events, industrial visits, and
               tech-driven initiatives, MLSA MIET has consistently grown,
               attracting thousands of participants across various technical
@@ -157,14 +171,18 @@ export default function KnowMore() {
       {/* Sponsors Section */}
       <section className="py-16 px-8 bg-blue-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Our Trusted Sponsors
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#203A61]">
+            <TextAnimate>
+
+              Our Trusted Sponsors
+            </TextAnimate>
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-self-center
+">
             {sponsors.map((sponsor, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-white  p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 <p className="text-center text-gray-800 font-medium">
                   {sponsor}
@@ -179,25 +197,38 @@ export default function KnowMore() {
         </div>
       </section>
 
+
+
+
       {/* Collaborations Section */}
       <section className="py-16 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Our Collaborations
+            <h2 className="text-3xl font-bold text-center mb-8 text-[#203A61]">
+              <TextAnimate>
+                Our Collaborations
+              </TextAnimate>
             </h2>
-            <p className="text-lg text-gray-700 text-center leading-relaxed">
-              We take pride in our partnerships with leading organizations,
-              including Microsoft, Fetch.ai, Squareboat, Startup4Nation, ADS
-              Labs, CSI-SRM, and many more, ensuring an unparalleled learning
-              experience for students.
-            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  self-center
+">
+              {partners.map((partners, index) => (
+                <div
+                  key={index}
+                  className="bg-white  p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <p className="text-center text-gray-800 font-medium">
+                    {partners}
+                  </p>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* Footer Quote */}
-      <section className="py-16 px-8 bg-cyan-600 text-white">
+      <section className="py-16 px-8 bg-[#203A61] text-white ">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xl font-medium italic">
             "At MLSA MIET, we continue to empower students, create
