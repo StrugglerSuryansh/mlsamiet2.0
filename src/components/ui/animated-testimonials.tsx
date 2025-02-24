@@ -146,7 +146,7 @@ export const AnimatedTestimonials = ({
                     href={testimonials[active].social?.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
+                    className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
                   >
                     <Twitter className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
                   </a>
@@ -156,7 +156,7 @@ export const AnimatedTestimonials = ({
                     href={testimonials[active].social?.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
+                    className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
                   >
                     <Linkedin className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
                   </a>
@@ -166,7 +166,7 @@ export const AnimatedTestimonials = ({
                     href={`mailto:${testimonials[active].social?.email}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
+                    className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
                   >
                     <Mail className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
                   </a>
@@ -177,7 +177,7 @@ export const AnimatedTestimonials = ({
                     href={testimonials[active].social?.commudle}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
+                    className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
                   >
                     <img
                       src="/commudle.svg"
@@ -195,13 +195,13 @@ export const AnimatedTestimonials = ({
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}
-              className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
+              className="h-7 w-7 rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center group/button"
             >
               <IconArrowLeft className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
             </button>
             <button
               onClick={handleNext}
-              className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
+              className="h-7 w-7 rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center group/button"
             >
               <IconArrowRight className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
             </button>
