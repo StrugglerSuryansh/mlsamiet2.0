@@ -28,7 +28,11 @@ export function AnimatedTestimonialsDemo({
   title,
   autoChangeInterval = 2000,
   isAutoChange = false,
+<<<<<<< Updated upstream
   className = "flex flex-col items-center  justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-7",
+=======
+  className = "flex flex-col items-center justify-center gap-4 text-primary text-center m-7",
+>>>>>>> Stashed changes
 }: AnimatedTestimonialsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 

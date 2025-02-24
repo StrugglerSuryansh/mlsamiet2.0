@@ -147,7 +147,7 @@ const prTeam = [
   {
     name: "Pari Agarwal",
     imageUrl:
-      "/MLSA_WEBSITE/Domain_Heads_photo/pari.png",
+      "/MLSA_WEBSITE/Domain_Heads_photo/Pari.jpg",
   },
   {
     name: "Anushka Singhal",

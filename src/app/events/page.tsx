@@ -15,7 +15,7 @@ export default function Event() {
       title: "EXCLUSIVE REEL SHOOT",
       body: "The MLSA is designed to empower students by providing them with opportunities to explore Microsoft technologies, enhance their skills, and connect with a global network of tech enthusiasts. It’s a space where learning meets leadership, offering mentorship, hands-on experiences, and exclusive resources to help students grow.  Whether you're here to dive into new tech, collaborate with like-minded peers, or drive meaningful change, MLSA is where opportunities turn into reality! 🚀",
       button: "Explore The Reel Shoot",
-      src: "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_0399.JPG",
+      src: "/MLSA_WEBSITE/EVENT_PHOTO/intro mlsa/IMG_0377.JPG",
       sectionId: "intromlsa",
     },
     {

@@ -51,7 +51,7 @@ function App() {
   const cards = [
     {
       title: "Our Aim",
-      icon: <Target className="w-full h-full text-[#034785]" />,
+      icon: <Target className="w-full h-full text-secondary" />,
       frontContent: "Striving for Excellence",
       backContent: [
         "Spark ideas, light the flame, Learn, inspire, and build your name.",
@@ -61,7 +61,7 @@ function App() {
     },
     {
       title: "Our Mission",
-      icon: <Compass className="w-full h-full text-[#034785]" />,
+      icon: <Compass className="w-full h-full text-secondary" />,
       frontContent: "Empowering Success",
       backContent: [
         "A mission where Innovation and dreams unfold Together we shape a future that's bold.",
@@ -71,7 +71,7 @@ function App() {
     },
     {
       title: "Our Vision",
-      icon: <Eye className="w-full h-full text-[#034785]" />,
+      icon: <Eye className="w-full h-full text-secondary" />,
       frontContent: "Shaping Tomorrow",
       backContent: [
         "Our vision is to build a vibrant community.",
@@ -84,7 +84,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-4 py-16">
+      <div className="flex flex-col items-center justify-center gap-4 text-primary text-center m-4 py-16">
         <TextAnimate
           animation="blurInUp"
           by="character"
@@ -107,7 +107,7 @@ function App() {
         <div className="flex align-center justify-center mt-8 mr-8 mb-4 ">
           {" "}
           {/* Added mb-4 */}
-          <div className="flex items-center gap-2 bg-[#203A61] hover:bg-[#607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105 secondary">
+          <div className="flex items-center gap-2 bg-[#203A61] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105 secondary">
           <Link href="/knowmore">Know More</Link>
           <HiArrowSmallRight />
           </div>

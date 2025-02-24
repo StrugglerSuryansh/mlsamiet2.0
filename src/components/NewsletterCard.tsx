@@ -16,11 +16,11 @@ function SingleCard({ title, description, link, icon }: NewsletterCardProps) {
   return (
     <div className="w-80 h-96">
       <div className="bg-white p-6 rounded-xl shadow-lg h-full flex flex-col items-center justify-center space-y-4 hover:shadow-xl transition-shadow">
-        <div className="text-[#034785] w-16 h-16">{icon}</div>
+        <div className="text-secondary w-16 h-16">{icon}</div>
         <h2 className="text-2xl primary text-black">{title}</h2>
         <p className="text-black text-center secondary">{description}</p>
         <Link href={link}>
-        <div className="flex items-center gap-2 bg-[#203A61] hover:bg-[##607da9] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105 secondary">
+        <div className="flex items-center gap-2 bg-[#203A61] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105 secondary">
          <button>Know More </button>
          <HiArrowSmallRight />
         </div>
@@ -55,7 +55,7 @@ export function NewsletterCards() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center m-4">
+      <div className="flex flex-col items-center justify-center gap-4 text-primary text-center m-4">
         <TextAnimate
           animation="blurInUp"
           by="character"

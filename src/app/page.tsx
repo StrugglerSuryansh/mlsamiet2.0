@@ -39,6 +39,7 @@ const testimonials = [
     designation: "Head Of Operations",
     src: "/MLSA_WEBSITE/Domain_Heads_photo/yagyansh.jpg",
     social: {
+      commudle:"https://www.commudle.com/users/3e8b79ce2ba94f96e865be6a5fee0fc9",
       linkedin: "https://www.linkedin.com/in/yagyansh-singh-deshwal/",
       email: "yagyanshsinghdeshwal@gmail.com",
     },

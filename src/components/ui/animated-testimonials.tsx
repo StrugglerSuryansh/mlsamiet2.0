@@ -109,13 +109,13 @@ export const AnimatedTestimonials = ({
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
           >
-            <h3 className="text-2xl dark:text-white text-[#203A61] primary">
+            <h3 className="text-2xl dark:text-white text-primary primary">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500 primary">
+            <p className="text-sm text-secondary primary">
               {testimonials[active].designation}
             </p>
-            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300 secondary">
+            <motion.p className="text-lg text-black mt-8 dark:text-neutral-300 secondary">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -158,7 +158,7 @@ export const AnimatedTestimonials = ({
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
                   >
-                    <Linkedin className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
+                    <Linkedin className="w-4 h-4 text-secondary dark:text-neutral-400" />
                   </a>
                 )}
                 {testimonials[active].social?.email && (
@@ -168,7 +168,7 @@ export const AnimatedTestimonials = ({
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
                   >
-                    <Mail className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
+                    <Mail className="w-4 h-4 text-secondary dark:text-neutral-400" />
                   </a>
                 )}
                 {/* Commudle SVG from public folder */}
@@ -182,7 +182,7 @@ export const AnimatedTestimonials = ({
                     <img
                       src="/commudle.svg"
                       alt="Commudle"
-                      className="w-4 h-4"
+                      className="w-4 h-4 text-secondary"
                     />
                   </a>
                 )}

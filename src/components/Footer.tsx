@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="hidden sm:flex flex-col mb-4 md:mb-0 sm:w-1/2 sm:text-4xl md:text-5xl primary">
           <div className="sm:flex items-center mb-4 md:mb-0 sm:text-4xl md:text-5xl primary">
             <img src="/mlsamietlogo1.png" alt="Logo" className="h-44 mr-2" />
-            <p>A Force <br /><span>For Good!</span></p>
+            <p className="text-primary">Be a Force <br /><span>for Good!</span></p>
           </div>
           <div>
-            <p className="text-base ml-7 mb-4 md:mb-0 primary">Follow us on our socials:</p>
+            <p className="text-base ml-7 mb-4 md:mb-0 primary text-black">Follow us on our socials:</p>
             <div className="flex gap-5 my-5 ml-7">
             <a href='https://www.linkedin.com/company/mlsa-miet/' className='text-2xl text-primary'><FaLinkedin /></a>
             <a href='https://www.instagram.com/mlsamiet' className='text-2xl text-primary'><FaInstagram /></a>
@@ -29,14 +29,14 @@ const Footer = () => {
         </div>
 
         <div className="mb-4 md:mb-0 sm:w-1/3 font-semibold">
-          <h3 className="font-semibold mb-4 primary">CONTACT US:</h3>
-          <p className="secondary">+91 9520664190</p>
-          <p className="secondary">+91 9897619408</p>
+          <h3 className="font-semibold mb-4 primary text-primary">CONTACT US:</h3>
+          <p className="secondary text-black">+91 9520664190</p>
+          <p className="secondary text-black">+91 9897619408</p>
           <a href="mailto:mlsa.community@miet.ac.in" className="secondary">mlsa.community@miet.ac.in</a>
         </div>
 
         <div className='sm:w-1/3 flex flex-col justify-end'>
-          <h3 className="font-semibold mb-4 primary">VISIT US AT:</h3>
+          <h3 className="font-semibold mb-4 primary text-primary">VISIT US AT:</h3>
           <a href="https://www.google.com/maps/place/Meerut+Institute+of+Engineering+and+Technology/@28.973047,77.6410032,17z/data=!3m1!4b1!4m6!3m5!1s0x390c668fdea4d87f:0x8795def814a486e7!8m2!3d28.973047!4d77.6410032!16s%2Fm%2F07k4y4h?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D" className="secondary">Meerut Institute of <br />Engineering & Technology <br />Meerut, India</a>
           {/* <iframe className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.483276503301!2d77.6410032!3d28.973046999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c668fdea4d87f%3A0x8795def814a486e7!2sMeerut%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1728559964538!5m2!1sen!2sin" ></iframe> */}
         </div>
