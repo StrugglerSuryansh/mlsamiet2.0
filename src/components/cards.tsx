@@ -84,7 +84,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4">
+      <div className="flex flex-col items-center justify-center gap-4 text-[#203A61] dark:text-cyan-400 text-center font-bold font-mono m-4 p-16">
         <TextAnimate
           animation="blurInUp"
           by="character"

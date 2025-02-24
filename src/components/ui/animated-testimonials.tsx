@@ -171,6 +171,7 @@ export const AnimatedTestimonials = ({
                     <Mail className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
                   </a>
                 )}
+                {/* Commudle SVG from public folder */}
                 {testimonials[active].social?.commudle && (
                   <a
                     href={testimonials[active].social?.commudle}
@@ -178,9 +179,14 @@ export const AnimatedTestimonials = ({
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors duration-200"
                   >
-                    <Commudle className="w-4 h-4 text-gray-600 dark:text-neutral-400" />
+                    <img
+                      src="/commudle.svg"
+                      alt="Commudle"
+                      className="w-4 h-4"
+                    />
                   </a>
                 )}
+
               </motion.div>
             )}
           </motion.div>
