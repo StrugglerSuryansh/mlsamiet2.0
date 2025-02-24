@@ -30,8 +30,8 @@ const Footer = () => {
 
         <div className="mb-4 md:mb-0 sm:w-1/3 font-semibold">
           <h3 className="font-semibold mb-4 primary text-primary">CONTACT US:</h3>
-          <p className="secondary text-black">+91 9520664190</p>
-          <p className="secondary text-black">+91 9897619408</p>
+          <a href="pari.agarwal.cseds.2022@miet.ac.in" className="secondary">mlsa.community@miet.ac.in</a>
+          <a href="kunj.agarwal.2022@miet.ac.in" className="secondary">mlsa.community@miet.ac.in</a>
           <a href="mailto:mlsa.community@miet.ac.in" className="secondary">mlsa.community@miet.ac.in</a>
         </div>
 

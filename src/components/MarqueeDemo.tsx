@@ -5,7 +5,7 @@ import { TextAnimate } from "./magicui/text-animate";
 const reviews = [
   {
     name: "Dev Chauhan",
-    username: "Advocate Developer, Fetch.AI",
+    username: "Developer Advocate, Fetch.AI",
     body: "Speaking at MLSA MIET was an inspiring experience—engaging with a tech-driven community passionate about innovation and problem-solving. The energy and curiosity of the students made every discussion impactful. Excited for future collaborations!",
     img: "https://avatar.vercel.sh/jack",
   },
