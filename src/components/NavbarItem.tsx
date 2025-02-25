@@ -8,6 +8,7 @@ interface NavbarItemProps {
   className?: string
   mobileView?: boolean
   external?: boolean
+  onClick?: () => void // Added onClick prop
 }
 
 const NavbarItem = ({
@@ -17,6 +18,7 @@ const NavbarItem = ({
   className = "",
   mobileView,
   external = false,
+  onClick, // Destructured onClick
 }: NavbarItemProps) => {
   if (type === "button") {
     return (
@@ -24,6 +26,7 @@ const NavbarItem = ({
         <button
           className={`rounded-full bg-gradient-to-r from-[#0070C5] to-[#3BABCF] hover:from-[#1e00c7] hover:to-[#52a8ff] transition-colors
           ${mobileView ? "text-white px-4 py-2 w-full text-lg" : "text-white px-6 py-1.5 text-md"}`}
+          onClick={onClick} // Handle click event
         >
           {children}
         </button>
@@ -36,6 +39,7 @@ const NavbarItem = ({
       href={href}
       target={external ? "_blank" : "_self"}
       className={`relative group ${mobileView ? "w-full text-center" : ""}`}
+      onClick={onClick} // Handle click event
     >
       <div className={`flex flex-col items-center ${mobileView ? "py-2" : ""}`}>
         <span
@@ -52,4 +56,3 @@ const NavbarItem = ({
 }
 
 export default NavbarItem
-
