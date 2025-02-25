@@ -104,8 +104,7 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="flex align-center justify-center mt-8 mr-8 mb-4 ">
-          {" "}
+        <div className="flex align-center justify-center mt-8 md:mr-8 mb-4 ">
           {/* Added mb-4 */}
           <div className="flex items-center gap-2 bg-[#203A61] text-white font-bold py-2 px-6 rounded-[5px] shadow-lg transition-all duration-300 transform hover:scale-105 secondary">
           <Link href="/knowmore">Know More</Link>

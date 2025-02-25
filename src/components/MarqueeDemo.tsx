@@ -107,7 +107,7 @@ export function MarqueeDemo() {
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl primary"
+          className="text-xl sm:text-4xl md:text-5xl lg:text-6xl primary"
         >
           VOICES OF EXPERIENCE
         </TextAnimate>
