@@ -46,7 +46,7 @@ const Navbar = () => {
               />
             </Link>
             <span className=" text-[#203A61]  text-[20px] font-semibold primary  lg:text-[24px]">
-              MLSA <span className="hidden md:inline-block text-[#034785]">MIET</span>
+              MLSA <span className="inline-block text-[#034785]">MIET</span>
             </span>
           </div>
 
@@ -62,7 +62,7 @@ const Navbar = () => {
             <NavbarItem href="/events">Events</NavbarItem>
             <NavbarItem href="/gallery">Gallery</NavbarItem>
             <NavbarItem href="/members">Team</NavbarItem>
-            <NavbarItem href="/contactus">Join Us</NavbarItem>
+            <NavbarItem href="/contactus">Contact Us</NavbarItem>
           </div>
         </div>
       </nav >

@@ -55,7 +55,7 @@ export function AnimatedTestimonialsDemo({
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-3xl  sm:text-4xl md:text-5xl lg:text-6xl primary"
+            className="text-2xl  sm:text-4xl md:text-5xl lg:text-6xl primary"
           >
             {title}
           </TextAnimate>

@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className="min-h-screen flex flex-col">
           <NavBar />
-          <main className="flex-1 pt-16">
+          <main className="flex-1 pt-8 lg:pt-16">
             {" "}
             {/* Add padding-top to account for fixed navbar */}
             {children}
