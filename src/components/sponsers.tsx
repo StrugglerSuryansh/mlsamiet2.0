@@ -21,27 +21,27 @@ const SponsorsSection = () => {
         },
         {
             name: "Azure Developer Community",
-            image: "/images/sponsors/azure-dev.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/azuredev.png"
         },
         {
             name: "Devfolio",
-            image: "/images/sponsors/devfolio.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/devfolio.png"
         },
         {
             name: "Polygon",
-            image: "/images/sponsors/polygon.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/polygon.png"
         },
         {
             name: "ETHIndia",
-            image: "/images/sponsors/ethindia.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/ethindia.png"
         },
         {
             name: "GitHub",
-            image: "/images/sponsors/github.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/github.png"
         },
         {
             name: "Virtual Protocol",
-            image: "/images/sponsors/virtual-protocol.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/virtualprotocol.png"
         },
         {
             name: "Tekshila AI",
@@ -49,11 +49,11 @@ const SponsorsSection = () => {
         },
         {
             name: "Quill Audits",
-            image: "/images/sponsors/quill.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/quilaudits.png"
         },
         {
             name: "Tezos",
-            image: "/images/sponsors/tezos.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/tezos.png"
         },
         {
             name: "Dcornerr",

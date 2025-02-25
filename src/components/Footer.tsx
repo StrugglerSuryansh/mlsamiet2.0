@@ -6,7 +6,7 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { FaCopyright } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className=" text-black py-4 bg-gray-100 border-t-2 border-gray-200 ">
+    <footer className=" text-black py-4 bg-gray-100 border-t-2 border-gray-200  px-">
       <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
         <div className="hidden sm:flex flex-col mb-4 md:mb-0 sm:w-1/2 sm:text-4xl md:text-5xl primary">
           <div className="sm:flex items-center mb-4 md:mb-0 sm:text-4xl md:text-5xl primary">
@@ -28,7 +28,7 @@ const Footer = () => {
           
         </div>
 
-        <div className="mb-4 md:mb-0 sm:w-1/3 font-semibold">
+        <div className="mb-4 md:mb-0 sm:w-1/3 font-semibold flex flex-col">
           <h3 className="font-semibold mb-4 primary text-primary">CONTACT US:</h3>
           <a href="pari.agarwal.cseds.2022@miet.ac.in" className="secondary">mlsa.community@miet.ac.in</a>
           <a href="kunj.agarwal.2022@miet.ac.in" className="secondary">mlsa.community@miet.ac.in</a>
