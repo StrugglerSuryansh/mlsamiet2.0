@@ -45,7 +45,7 @@ const SponsorsSection = () => {
         },
         {
             name: "Tekshila AI",
-            image: "/images/sponsors/tekshila.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/tekshila.png"
         },
         {
             name: "Quill Audits",
@@ -57,7 +57,7 @@ const SponsorsSection = () => {
         },
         {
             name: "Dcornerr",
-            image: "/images/sponsors/dcornerr.png"
+            image: "/MLSA_WEBSITE/sponsers_logo/dcornerr.png"
         }
     ];
 
