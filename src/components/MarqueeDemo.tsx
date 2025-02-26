@@ -76,21 +76,24 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative w-80 sm:w-96 cursor-pointer overflow-visible rounded-xl border p-4 sm:p-7", // reduced width and padding
+        "relative w-96 cursor-pointer overflow-visible rounded-xl border p-6", // increased width to w-96 and padding
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
-        "mx-2 sm:mx-4" // adjusted margin
+        "mx-4" // added margin between cards
       )}
     >
-      <div className="flex flex-row items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+      <div className="flex flex-row items-center gap-3 mb-4 ">
+        {" "}
+        {/* increased bottom margin */}
+        {/* <img className="rounded-full h-12 w-12 object-cover" alt="" src={img} /> */}
         <div className="flex flex-col">
-          <figcaption className="text-sm sm:text-base font-bold primary text-primary dark:text-white">
+          <figcaption className="text-base font-bold primary text-primary dark:text-white">
             {name}
           </figcaption>
-          <p className="text-xs sm:text-sm font-medium primary dark:text-white/40 text-secondary">{username}</p>
+          <p className="text-sm font-medium primary dark:text-white/40 text-secondary">{username}</p>
         </div>
       </div>
-      <blockquote className="text-xs sm:text-xs leading-relaxed whitespace-normal break-words secondary text-justify">
+      <blockquote className="text-sm leading-relaxed whitespace-normal break-words secondary text-justify">
         {body}
       </blockquote>
     </figure>
@@ -100,17 +103,17 @@ const ReviewCard = ({
 export function MarqueeDemo() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4 text-primary text-center m-4 sm:m-7">
+      <div className="flex flex-col items-center justify-center gap-4 text-primary text-center m-7">
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="text-lg sm:text-4xl md:text-5xl lg:text-6xl primary"
+          className="text-xl sm:text-4xl md:text-5xl lg:text-6xl primary"
         >
           VOICES OF EXPERIENCE
         </TextAnimate>
       </div>
 
-      <div className="relative flex h-[400px] sm:h-[500px] md:h-[600px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+      <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
@@ -121,6 +124,8 @@ export function MarqueeDemo() {
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
       </div>
     </>
   );
