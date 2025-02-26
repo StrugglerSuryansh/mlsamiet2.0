@@ -66,7 +66,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav >
-      <MobileView visible={showMobileMenu} />
+      <MobileView visible={showMobileMenu} onClose={toggleMobileMenu} />
     </>
   )
 }
