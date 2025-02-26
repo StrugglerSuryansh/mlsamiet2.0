@@ -94,7 +94,7 @@ export default function KnowMore() {
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-4xl md:text-5xl text-center text-[#203A61] mb-16 primary"
+            className="text-xl sm:text-4xl md:text-5xl text-center text-[#203A61] mb-16 primary"
           >
             UNCOVER OUR JOURNEY
           </TextAnimate>

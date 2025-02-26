@@ -252,14 +252,14 @@ const visualTeam = [
 export function Teams() {
   return (
     <div className="container mx-auto px-20 py-16">
-      <h1 className="text-5xl text-center mb-16 text-[#203A61] primary">
+      <h1 className="text-2xl md:text-5xl text-center mb-16 text-[#203A61] primary">
         <TextAnimate>
           THE MINDS BEHIND THE MISSION
         </TextAnimate>
       </h1>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Content Creation</h2>
+        <h2 className="text-xl sm:text-4xl font-bold mb-8 text-[#203A61] secondary">Content Creation</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {contentTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -268,7 +268,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary ">Creative Design</h2>
+        <h2 className="text-xl sm:text-4xl font-bold mb-8 text-[#203A61] secondary">Creative Design</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {graphicsTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -277,7 +277,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Digital Marketing</h2>
+        <h2 className="text-xl sm:text-4xl font-bold mb-8 text-[#203A61] secondary">Digital Marketing</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {socialTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -286,7 +286,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Event Operations</h2>
+        <h2 className="text-xl sm:text-4xl font-bold mb-8 text-[#203A61] secondary">Event Operations</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {eventTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -295,7 +295,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Public Relations & Outreach</h2>
+        <h2 className="text-xl sm:text-4xl font-bold mb-8 text-[#203A61] secondary">Public Relations & Outreach</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {prTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -304,7 +304,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Technical Team</h2>
+        <h2 className="text-xl sm:text-4xl font-bold mb-8 text-[#203A61] secondary">Technical Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {technicalTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
@@ -313,7 +313,7 @@ export function Teams() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-4xl font-bold mb-8 text-[#203A61] secondary">Visuals Team</h2>
+        <h2 className="text-xl sm:text-4xl font-bold mb-8 text-[#203A61] secondary">Visuals Team</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {visualTeam.map((member, index) => (
             <TeamMember key={member.name} {...member} isFirst={index === 0} />
